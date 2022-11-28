@@ -18,7 +18,7 @@ function Creators() {
         </h1>
       </div>
       <div className="px-[5rem] mt-10">
-        <div className="bg-[#4F2B11] px-10 h-[32vh] rounded-2xl  ">
+        <div className="bg-[#4F2B11] px-10 h-[36vh] rounded-2xl  ">
           <div className="flex items-center flex-col justify-center py-4">
             <div className="rounded-2xl">
               <Image src={images.ernest} className="rounded-2xl" />
@@ -39,7 +39,7 @@ function Creators() {
         </div>
       </div>
       <div className="px-[5rem] mt-10">
-        <div className="bg-[#4F2B11] px-10 h-[32vh] rounded-2xl  ">
+        <div className="bg-[#4F2B11] px-10 h-[36vh] rounded-2xl  ">
           <div className="flex items-center flex-col justify-center py-4">
             <div className="rounded-2xl">
               <Image src={images.dani} className="rounded-2xl" />

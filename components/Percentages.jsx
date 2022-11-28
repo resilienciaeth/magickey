@@ -4,7 +4,7 @@ function Percentages() {
   return (
     <div className=" bg-black px-10 mt-20">
       <div>
-        <h1 className="magickey-1 text-center text-[36px] font-bold">
+        <h1 className="magickey-1 text-center text-[42px] font-bold leading-[50px]">
           We all like
           {' '}
           <br />
