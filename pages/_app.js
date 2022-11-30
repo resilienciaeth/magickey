@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider
       attribute="class"
     >
-      <div className="bg-white font-creato min-h-screen max-h-screen">
+      <div className="font-creato min-h-screen max-h-screen">
         <Navbar />
         <Component />
       </div>
