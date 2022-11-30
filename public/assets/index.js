@@ -20,6 +20,7 @@ import logomobile from './logomobile.png';
 import iphone1 from './iphone.png';
 import ernest from './ernest.png';
 import dani from './dani.png';
+import folders from './folders.png';
 
 export default {
   menu,
@@ -44,5 +45,6 @@ export default {
   iphone1,
   ernest,
   dani,
+  folders,
 
 };

@@ -18,7 +18,7 @@ function Header() {
           <br />
           Join us in becoming the future of books.
         </p1>
-        <button className="mt-4 bg-white rounded-md font-bold px-4 py-1 text-[10px]">View Utility</button>
+        <button className="mt-4 bg-white text-black rounded-md font-bold px-4 py-1 text-[10px]">Buy Magickey</button>
       </div>
     </div>
   );

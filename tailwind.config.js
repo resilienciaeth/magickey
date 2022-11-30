@@ -31,7 +31,6 @@ module.exports = {
         'meta-gray-3': '#D1D6D8',
         'debook-1': '#FF4227',
         'button-1': '#E0E0E0',
-        'debook-border': '##9F9F9F',
         'magickey-2': '#D18C64',
       },
       width: {

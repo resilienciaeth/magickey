@@ -7,5 +7,6 @@ import Price from './Price';
 import Percentages from './Percentages';
 import Future from './Future';
 import Creators from './Creators';
+import Getyours from './Getyours';
 
-export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators];
+export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours];

@@ -9,6 +9,7 @@ import Price from '../components/Price';
 import Percentages from '../components/Percentages';
 import Future from '../components/Future';
 import Creators from '../components/Creators';
+import Getyours from '../components/Getyours';
 
 const index = () => (
   <div>
@@ -19,6 +20,7 @@ const index = () => (
     <Percentages />
     <Future />
     <Creators />
+    <Getyours />
   </div>
 );
 
