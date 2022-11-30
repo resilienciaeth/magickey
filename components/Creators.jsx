@@ -30,8 +30,8 @@ function Creators() {
               <h1 className="text-center font-bold magickey-2 text-[25px]">Ernest Viñas</h1>
               <div className="magickey-6">
                 <div className="py-1 flex flex-row justify-center space-x-4">
-                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://twitter.com/3rnestvinas')} />
-                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/ernestdift/')} />
+                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/ernestdift/')} />
+                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://twitter.com/3rnestvinas')} />
                 </div>
               </div>
             </div>
@@ -51,8 +51,8 @@ function Creators() {
               <h1 className="text-center font-bold magickey-2 text-[22px]">Daniel Huertas</h1>
               <div className="magickey-6">
                 <div className="py-1 flex flex-row justify-center space-x-4">
-                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://twitter.com/danielhuertasl')} />
-                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/resilienciaeth/')} />
+                  <SlSocialInstagram className="text-white" size={20} onClick={() => window.open('https://www.instagram.com/danielhuertasl/')} />
+                  <SlSocialTwitter className="text-white" size={20} onClick={() => window.open('https://twitter.com/resilienciaeth')} />
                 </div>
               </div>
             </div>
