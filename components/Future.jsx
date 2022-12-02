@@ -5,7 +5,7 @@ import images from '../public/assets';
 
 function Future() {
   return (
-    <div className="h-[90vh] nm:h-[80vh]">
+    <div className="h-[110vh] nm:h-[80vh]">
       <div className="nm:flex nm:flex-row-reverse ">
         <div className="flex mt-20 nm:mt-0 nm:w-[40%] items-center justify-center">
           <Image src={images.iphone1} />
