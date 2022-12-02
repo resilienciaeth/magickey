@@ -5,7 +5,7 @@ import images from '../public/assets';
 
 function Utilities() {
   return (
-    <div className="h-[100vh] flex flex-col nm:flex-row grey-1 font-creato px-10">
+    <div className="h-[80vh] flex flex-col nm:flex-row grey-1 font-creato px-10">
       <div className="flex flex-col items-center nm:items-start nm:justify-center nm:w-[50%] nm:ml-10 ">
         <p className="text-[10px] nm:text-[15px] mt-20 text-[#EE7015] text-center nm:text-left">From books to ebooks to debooks.</p>
         <h1 className="text-center nm:text-left magickey-2 text-[42px] nm:text-[70px] font-bold leading-[50px] nm:leading-[80px]">

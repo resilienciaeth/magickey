@@ -29,7 +29,7 @@ module.exports = {
         'meta-gray': '#EFF5F8',
         'meta-gray-2': '#E8F1F2',
         'meta-gray-3': '#D1D6D8',
-        'debook-1': '#FF4227',
+        'debook-1': '#EE7015',
         'button-1': '#E0E0E0',
         'magickey-2': '#D18C64',
       },
