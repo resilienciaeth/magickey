@@ -2,8 +2,8 @@ import React from 'react';
 
 function Getyours() {
   return (
-    <div className=" nm:h-[60vh] py-32 flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center nm:justify-center">
+    <div className=" h-[60vh] nm:h-[60vh] flex flex-col items-center justify-center">
+      <div className="flex flex-col mt-10 items-center nm:justify-center">
         <p className="text-[#C3512D] text-center text-[12px] nm:text-[15px]">the future of books.</p>
         <h1 className="text-center font-bold magickey-1 text-[40px] nm:text-[70px] leading-[40px] nm:leading-[70px]">
           DEBOOK
