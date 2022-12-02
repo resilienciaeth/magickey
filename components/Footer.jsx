@@ -4,7 +4,7 @@ import images from '../public/assets';
 
 function Footer() {
   return (
-    <div className=" w-full grey-1 px-20 mb-10">
+    <div className=" w-full grey-1 px-20 py-10">
       <div className="flex flex-col nm:flex-row items-center justify-start nm:justify-between">
         <div className="flex flex-col">
           <div className="mt-10">
@@ -44,7 +44,7 @@ function Footer() {
           {' '}
           <span className="font-bold">NAKED META</span>
         </p>
-        <p className="text-black mb-10">2022. DEBOOK. All rights reserved.</p>
+        <p className="text-black">2022. DEBOOK. All rights reserved.</p>
       </div>
     </div>
   );
