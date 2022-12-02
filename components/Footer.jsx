@@ -4,7 +4,7 @@ import images from '../public/assets';
 
 function Footer() {
   return (
-    <div className="h-[50vh] w-full grey-1 px-20 mb-10">
+    <div className=" w-full grey-1 px-20 mb-10">
       <div className="flex flex-col nm:flex-row items-center justify-start nm:justify-between">
         <div className="flex flex-col">
           <div className="mt-10">
@@ -38,13 +38,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center space-y-4 mt-5 nm:mt-20 mb-10">
+      <div className="flex flex-col items-center space-y-2 mt-5 nm:mt-20 mb-10">
         <p className="text-black">
           Powered by
           {' '}
           <span className="font-bold">NAKED META</span>
         </p>
-        <p className="text-black">2022. DEBOOK. All rights reserved.</p>
+        <p className="text-black mb-10">2022. DEBOOK. All rights reserved.</p>
       </div>
     </div>
   );
