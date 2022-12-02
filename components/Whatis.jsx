@@ -43,8 +43,15 @@ function Whatis() {
               </p>
             </div>
           </div>
-          <div className="hidden nm:flex">
-            <p>HOLA</p>
+          <div className="hidden nm:flex nm:mt-10 nm:flex-col items-center">
+            <p className="mt-10 text-[#9F8A81]">
+              That is just a first glance on the idea; having a DEBOOK will be memorable for authors and readers.
+            </p>
+            <p className="text-[#9F8A81]">
+              Check more in our
+              {' '}
+              <span className="underline cursor-pointer font-bold"> MANIFIESTO.</span>
+            </p>
           </div>
         </div>
 
