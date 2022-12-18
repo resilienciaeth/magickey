@@ -14,7 +14,7 @@ function Whatis() {
 
               </h1>
               <p className="text-white text-[15px] md:text-[17px] text-center px-4 md:px-6 mt-6">
-                DEBOOK is a platform that leverages the Blockchain technology to make books fairer to authors and readers.
+                DEBOOK is a platform that leverages the Blockchain technology to make books fairer to authors and readers while keeping it user friendly.
               </p>
             </div>
             <div className=" orange-1 h-[30vh] nm:h-[40vh] nm:w-[33%]  rounded-xl flex items-center justify-center flex-col">
