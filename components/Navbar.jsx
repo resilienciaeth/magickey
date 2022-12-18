@@ -27,13 +27,15 @@ function Navbar() {
             <BsJournalBookmark size={25} />
             <li className="p-2 cursor-pointer">Manifesto</li>
           </div>
-          <div onClick={() => window.open('https://www.instagram.com/debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
+          <div className="flex flex-row items-center px-2 cursor-pointer rounded-2xl bg-hover:bg-zinc-900 duration-[600ms]">
             <SlSocialInstagram size={25} />
-            <li className="p-2 cursor-pointer">Instagram</li>
-          </div>
-          <div onClick={() => window.open('https://www.twitter.com/debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms] ">
-            <SlSocialTwitter size={25} />
-            <li className="p-2 cursor-pointer">Twitter</li>
+            <li className="peer p-2 cursor-pointer">Socials</li>
+            <div className="hidden peer-hover:flex top-[3.8rem] absolute hover:flex rounded-2xl
+         w-[100px] flex-col drop-shadow-lg"
+            >
+              <a className="px-5 text-right py-3 text-white hover:bg-zinc-800" href="#">Twitter</a>
+              <a className="px-5 py-3 text-right  text-white hover:bg-zinc-800" href="#" onClick={() => window.open('https://www.instagram.com/debook.app')}>Instagram</a>
+            </div>
           </div>
           <button onClick={() => window.open('')} className="uppercase text-black magickey-6 text-[15px] border-black border-2 rounded-[6px] px-4 py-1 hover:bg-black hover:border-white font-bold duration-300">Buy Magickey</button>
         </ul>

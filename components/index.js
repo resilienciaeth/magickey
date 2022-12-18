@@ -8,6 +8,7 @@ import Percentages from './Percentages';
 import Future from './Future';
 import Creators from './Creators';
 import Getyours from './Getyours';
-import Footer from './Footer';
+import Carousel from './Carousel';
+import Ourwhy from './Ourwhy';
 
-export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Footer];
+export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Carousel, Ourwhy];

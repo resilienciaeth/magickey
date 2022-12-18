@@ -22,7 +22,7 @@ function Header() {
           <br />
           Join us in becoming the future of books.
         </p1>
-        <button className="mt-4 bg-white text-black rounded-md font-bold px-4 nm:px-6 py-1 nm:py-2 text-[10px] nm:text-[20px]">Buy Magickey</button>
+        <button className="mt-4 bg-white text-black rounded-md font-bold px-4 nm:px-6 py-1 nm:py-2 text-[10px] nm:text-[20px]">Learn More</button>
       </div>
     </div>
   );

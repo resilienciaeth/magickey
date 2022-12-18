@@ -1,13 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react';
 
 import images from '../public/assets';
+import Carousel from './Carousel';
 
 function Utilities() {
   return (
-    <div className="h-[90vh] flex flex-col nm:flex-row grey-1 font-creato px-10">
+    <div className=" py-10 nm:h-[100vh] flex flex-col nm:flex-row grey-1 font-creato px-10">
       <div className="flex flex-col items-center nm:items-start nm:justify-center nm:w-[50%] nm:ml-10 ">
-        <p className="text-[10px] nm:text-[15px] mt-20 text-[#EE7015] text-center nm:text-left">From books to ebooks to debooks.</p>
+        <p className="text-[10px] nm:text-[15px] mt-20 nm:mt-0 text-[#EE7015] text-center nm:text-left">We want you to grow with us.</p>
         <h1 className="text-center nm:text-left magickey-2 text-[42px] nm:text-[70px] font-bold leading-[50px] nm:leading-[80px]">
           Real utility
           <br />
@@ -15,12 +17,14 @@ function Utilities() {
           since day one.
         </h1>
         <p className="hidden nm:flex mt-5 text-[15px] text-black">
-          At DEBOOK, we believe that communities move the world. There is a massive upside to building in public, especially in an industry that changes very fast. That is why we believe that building in front of a community will help us accelerate the adoption of these new books. Your feedback will help us in a massive way to make things better every single day.
+          At DEBOOK, we believe that communities move the world. That is why we believe that building this platform in front of a community will help us accelerate the adoption of these new books. Your feedback will help us in a massive way to make things better every single day.
         </p>
         <p className="hidden nm:flex mt-5 text-[15px] text-black">
-          For that reason, once you become an early adopter of DEBOOK Masterkey, we will make sure that you have real-life utility, forever.
+          For that reason, once you become an early adopter of DEBOOK Masterkey, we will make sure that you have real-life utility, forever. We want you to grow with us.
         </p>
       </div>
+      <Carousel />
+      {/* }
       <div className="nm:py-20 nm:mt-10 nm:px-10 nm:flex nm:items-center nm:justify-center">
         <div className="magickey-3 nm:w-[70%] mt-10 items-start justify-center flex">
           <div className="flex flex-col items-center">
@@ -37,6 +41,7 @@ function Utilities() {
           </div>
         </div>
       </div>
+      */}
     </div>
   );
 }

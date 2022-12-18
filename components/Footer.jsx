@@ -11,29 +11,29 @@ function Footer() {
             <Image src={images.logofooter} />
           </div>
           <div className="flex flex-col mt-5 nm:mt-20 space-y-2">
-            <p className="text-debook-1 text-center nm:text-left text-[15px]  nm:text-[18px]">Privacy Policy</p>
-            <p className="text-debook-1 text-center nm:text-left text-[15px]  nm:text-[18px]">Terms of Service</p>
+            <p className="text-debook-1 text-center nm:text-left text-[15px]  nm:text-[18px] cursor-pointer">Privacy Policy</p>
+            <p className="text-debook-1 text-center nm:text-left text-[15px] cursor-pointer  nm:text-[18px]">Terms of Service</p>
           </div>
         </div>
         <div className="flex flex-col nm:mt-12 mb-10">
           <div className="flex flex-row space-x-10 mt-10 w-full">
             <div className="flex flex-col space-y-5">
               <h1 className="text-black text-[14px]">Learn</h1>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Manifesto</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">App</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Sell</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Manifesto</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">App</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Sell</p>
             </div>
             <div className="flex flex-col space-y-5">
               <h1 className="text-black text-[14px]">Company</h1>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Careers</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Help</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Subscribe</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Careers</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Help</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Subscribe</p>
             </div>
             <div className="flex flex-col space-y-5">
               <h1 className="text-black text-[14px]">Connect</h1>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Twitter</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Instagram</p>
-              <p className="text-[15px] nm:text-[18px] text-debook-1">Discord</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Twitter</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Instagram</p>
+              <p className="text-[15px] nm:text-[18px] text-debook-1 cursor-pointer">Discord</p>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ function Footer() {
           {' '}
           <span className="font-bold">NAKED META</span>
         </p>
-        <p className="text-black">2022. DEBOOK. All rights reserved.</p>
+        <p className="text-black text-center">2022. DEBOOK. All rights reserved.</p>
       </div>
     </div>
   );

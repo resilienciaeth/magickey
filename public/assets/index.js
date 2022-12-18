@@ -15,12 +15,16 @@ import nftcarddesktop from './nftcarddesktop1.png';
 import authordesktop from './authordesktop.png';
 import nftimage1 from './nftimage1.png';
 import iphonedesktop from './mobiledesktop.png';
+import utilities from './utilities.png';
+import utilitiesmb from './utilitiesmobile.png';
 
 import logomobile from './logomobile.png';
 import iphone1 from './iphone.png';
 import ernest from './ernest.png';
 import dani from './dani.png';
 import folders from './folders.png';
+import utility2 from './2utility.png';
+import utility3 from './3utility.png';
 
 export default {
   menu,
@@ -40,11 +44,15 @@ export default {
   authordesktop,
   nftimage1,
   iphonedesktop,
+  utilities,
+  utilitiesmb,
 
   logomobile,
   iphone1,
   ernest,
   dani,
   folders,
+  utility2,
+  utility3,
 
 };
