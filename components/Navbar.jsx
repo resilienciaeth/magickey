@@ -14,7 +14,7 @@ function Navbar() {
   };
   return (
     <nav>
-      <div className="flex font-creato justify-between items-center nm:h-24 h-14  px-4 bg-black text-black">
+      <div className="flex font-creato justify-between items-center nm:h-24 h-14  px-4 bg-[#121212] text-black">
         <div>
           <Image src={images.logomobile} width={66} height={12} />
         </div>

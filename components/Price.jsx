@@ -2,7 +2,7 @@ import React from 'react';
 
 function Price() {
   return (
-    <div className="bg-black nm:mt-32">
+    <div className="bg-[#121212] nm:mt-32">
       <div className="nm:px-32">
         <p className="text-center mt-10 text-[10px] nm:text-[15px] magickey-1">From books to ebooks to debooks.</p>
         <h1 className="text-center magickey-1 font-bold text-[30px] nm:text-[70px] leading-[30px] nm:leading-[70px]">

@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 class MyDocument extends Document {
   render() {
     return (
-      <Html className="bg-black">
+      <Html className="bg-[#121212]">
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter&display=optional"

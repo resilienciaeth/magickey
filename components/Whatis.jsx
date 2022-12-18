@@ -2,7 +2,7 @@ import React from 'react';
 
 function Whatis() {
   return (
-    <div className="h-[130vh] nm:h-[100vh] bg-black px-10">
+    <div className="h-[130vh] nm:h-[100vh] bg-[#121212] px-10">
       <div className="nm:mt-20">
         <p className="text-center text-[10px] md:text-[15px] magickey-1">From books to ebooks to debooks.</p>
         <h1 className="magickey-1 text-center text-[30px] md:text-[70px] font-bold">What is DEBOOK?</h1>

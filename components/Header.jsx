@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <div className="bg-black flex justify-center items-center h-[90vh]">
+    <div className="bg-[#121212] flex justify-center items-center h-[90vh]">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-center text-[50px] nm:text-[100px] font-bold leading-[50px] nm:leading-[120px] magickey-1">
           Your magic key
