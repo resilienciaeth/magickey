@@ -16,7 +16,7 @@ function Creators() {
           {' '}
           the idea
         </h1>
-        <p className="text-[#9F8A81] text-left text-[15px] mr-10 hidden nm:flex">Our creators are dedicating their full time to this idea. Two humans that are passionate about inner growth, knowledge and communities. </p>
+        <p className="text-[#9F8A81] text-left text-[15px] mr-10 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
       </div>
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
         <div className="px-[4rem] nm:px-0 mt-10">
@@ -38,7 +38,7 @@ function Creators() {
                 </div>
               </div>
             </div>
-            <div className=" mt-2 text-center text-white text-[14px]">'I love books, and as an author I know there are many struggles when it comes to publishing one. That is why I am passionate about DEBOOK. I want authors to know their readers, and I want readers to get access to like minded people. I really believe communities change the world. Let's do it together'</div>
+            <div className=" mt-2 text-center text-white text-[14px]">'My relationship with books has been very special. In 2019 I invented “SYLPROGRAMS” a particular self-development program that literally helped people rewrite their own stories. I am not a passionate reader but I am a highly passionate learner. I love learning by doing because my brain gets hooked on every good idea. There are many people like me and I feel the duty to create a way books can be more than just letters so they can be more valuable and enjoyed by everyone. THATS DEBOOK'</div>
           </div>
         </div>
         <div className="px-[4rem] mt-10">

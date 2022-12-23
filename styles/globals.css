@@ -59,6 +59,12 @@
    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
 }
 
+.card-1 {
+    background-image: url("../public/assets/cardsection.png");
+    object-fit: fill;
+    background-repeat: no-repeat;
+}
+
 .magickey-1 {
     background: linear-gradient(180deg, #EFE0DB 0%, #6D290C 100%, rgba(194, 117, 46, 0.5) 100%);
     -webkit-background-clip: text;
@@ -374,6 +380,8 @@ input {
       min-width: 300%;
     }
   }
+
+
 
   .radar .shadow {
     background: conic-gradient(

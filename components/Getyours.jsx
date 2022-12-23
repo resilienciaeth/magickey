@@ -10,7 +10,7 @@ function Getyours() {
           {' '}
           <br className="flex md:hidden" />
           {' '}
-          MASTERKEY
+          MAGICKEY
         </h1>
         <p className="text-magickey-2 px-10 text-center text-[10px] nm:text-[15px]">
           If you have made it all the way here, we want to say that we appreciate your time,
@@ -19,7 +19,7 @@ function Getyours() {
           {' '}
           and we want curious people like you to help us make DEBOOK the future of books. Join us.
         </p>
-        <button className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">Get your Masterkey</button>
+        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">Get your Magickey</button>
       </div>
     </div>
   );

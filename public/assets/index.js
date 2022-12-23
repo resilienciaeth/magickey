@@ -17,6 +17,10 @@ import nftimage1 from './nftimage1.png';
 import iphonedesktop from './mobiledesktop.png';
 import utilities from './utilities.png';
 import utilitiesmb from './utilitiesmobile.png';
+import logo from './logo.png';
+import card1 from './card1.png';
+import card2 from './card2.png';
+import card3 from './card3.png';
 
 import logomobile from './logomobile.png';
 import iphone1 from './iphone.png';
@@ -46,6 +50,10 @@ export default {
   iphonedesktop,
   utilities,
   utilitiesmb,
+  logo,
+  card1,
+  card2,
+  card3,
 
   logomobile,
   iphone1,

@@ -10,5 +10,6 @@ import Creators from './Creators';
 import Getyours from './Getyours';
 import Carousel from './Carousel';
 import Ourwhy from './Ourwhy';
+import Limited from './Limited';
 
-export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Carousel, Ourwhy];
+export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Carousel, Ourwhy, Limited];
