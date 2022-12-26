@@ -20,7 +20,12 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image src={images.folders} width={300} height={300} objectFit="contain" />
+                <Image
+                  src="/v1672097089/Folders_xv3fsx.png"
+                  width={300}
+                  height={300}
+                  objectFit="contain"
+                />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
                 Access to
@@ -42,7 +47,12 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image src={images.utility2} width={300} height={300} objectFit="contain" />
+                <Image
+                  src="/v1672097089/2utility_qchbsg.png"
+                  width={300}
+                  height={300}
+                  objectFit="contain"
+                />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
                 Priority access to
@@ -65,7 +75,7 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image src={images.utility3} width={300} height={300} objectFit="contain" />
+                <Image src="/v1672097089/3utility_xvyd5o.png" width={300} height={300} objectFit="contain" />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
                 Early access to
