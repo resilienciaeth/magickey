@@ -25,11 +25,11 @@ function Future() {
               in DEBOOK
             </h1>
           </div>
-          <p className="text-center nm:mr-20 nm:mt-4 nm:text-left text-[12px] nm:text-[15px] leading-[20px] text-[#9F8A81]">
+          <p className="text-center nm:mr-20 nm:mt-4 nm:text-left text-[15px] nm:text-[15px] leading-[20px] text-[#9F8A81]">
             Our founders love to learn, and they also love communities. DEBOOK is a way for us to make this beautiful creations into something more fair, something more dinamic, something that brings you closer to other humans. That is why DEBOOK was born.
 
           </p>
-          <p className="text-center nm:mr-20 nm:text-left text-[12px] nm:text-[15px] leading-[20px] mt-10 text-[#9F8A81]
+          <p className="text-center nm:mr-20 nm:text-left text-[15px] nm:text-[15px] leading-[20px] mt-10 text-[#9F8A81]
 "
           >
             We want to help authors make more money and enjoy their creation process more. We also want to help readers get ownership over what they buy, and we want both of them to come together to create amazing books.

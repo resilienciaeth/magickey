@@ -9,6 +9,7 @@ import Creators from '../components/Creators';
 import Getyours from '../components/Getyours';
 import Ourwhy from '../components/Ourwhy';
 import Limited from '../components/Limited';
+import Comparation from '../components/Comparation';
 
 const index = () => (
   <div>
@@ -17,6 +18,7 @@ const index = () => (
     <Utilities />
     <Price />
     <Limited />
+    <Comparation />
     <Percentages />
     <Future />
     <Ourwhy />

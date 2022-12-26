@@ -60,9 +60,36 @@
 }
 
 .card-1 {
-    background-image: url("../public/assets/cardsection.png");
+    background-image: url("/cardsection.png");
     object-fit: fill;
     background-repeat: no-repeat;
+}
+
+.card-2 {
+    background-image: url("/cardsection.png");
+    object-fit: fill;
+    background-repeat: no-repeat;
+}
+
+.magickey-9 {
+    background: linear-gradient(96.17deg, #515151 14.4%, #E88A34 93.67%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.magickey-7 {
+    background: linear-gradient(96.17deg, #D29F8F 14.4%, rgba(194, 117, 46, 0.43) 93.67%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.magickey-8 {
+    background: linear-gradient(119.81deg, #E6D8CF 31.02%, #F4BAA7 95.76%);
+    opacity: 0.8;
+    border: 1px solid #AA8271;
+    border-radius: 21px;
 }
 
 .magickey-1 {
@@ -104,7 +131,7 @@ background-clip: text;
 
 .magickey-6 {
     background: linear-gradient(94.08deg, #F1F1F1 0%, #E8BA98 106.59%);
-opacity: 0.6;
+    opacity: 0.6;
 border-radius: 7px;
 }
 
