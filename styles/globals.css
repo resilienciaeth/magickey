@@ -60,13 +60,13 @@
 }
 
 .card-1 {
-    background-image: url("/cardsection.png");
-    object-fit: fill;
+    background-image: url("https://res.cloudinary.com/drxuutjwr/image/upload/v1672091208/cardsection_jgbef1.png");
+    object-fit: contain;
     background-repeat: no-repeat;
 }
 
 .card-2 {
-    background-image: url("/cardsection.png");
+    background-image: url("https://res.cloudinary.com/drxuutjwr/image/upload/v1672091208/cardsection_jgbef1.png");
     object-fit: fill;
     background-repeat: no-repeat;
 }

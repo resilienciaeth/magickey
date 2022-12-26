@@ -2,7 +2,7 @@ import React from 'react';
 
 function Limited() {
   return (
-    <div className="h-screen flex flex-col nm:flex-row items-center justify-center px-10">
+    <div className="h-[130vh] flex flex-col nm:flex-row items-center justify-center px-10">
       <div className="card-1 bg-[#C56439] px-4 rounded-2xl nm:rounded-tr-none rounded-b-none nm:rounded-3xl nm:rounded-r-none max-w-[412px] max-h-[520px]">
         <h1 className="font-larken text-[30px] nm:text-[40px] text-center font-bold py-10 nm:py-[8rem] text-white">SUPER LIMITED SUPPLY AFFORDABLE TO EVERYONE</h1>
       </div>
