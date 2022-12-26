@@ -16,7 +16,7 @@ function Navbar() {
     <nav>
       <div className="flex font-creato justify-between items-center nm:h-24 h-14  px-4 bg-[#121212] text-black">
         <div onClick={() => window.open('/', '_self')} className=" cursor-pointer">
-          <Image src={images.logo} width={108} height={20} />
+          <Image src="/v1672097966/logo_nex9ig.png" width={108} height={20} />
         </div>
         <ul className="hidden text-white font-bold nm:flex nm:mr-10 space-x-[4rem] text-[15px]">
           <div onClick={() => window.open('https://www.debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
