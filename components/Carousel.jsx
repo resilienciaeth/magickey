@@ -20,7 +20,7 @@ function Carousel() {
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
                 <CldImage
-                  src="v1672178832/DEBOOK_UTILIDAD_01_1_bu5hyt.gif"
+                  src="v1672179184/DEBOOK_UTILIDAD_03_1_odgb9d.gif"
                   width={300}
                   height={300}
                 />
@@ -46,7 +46,7 @@ function Carousel() {
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
                 <CldImage
-                  src="v1672165683/DEBOOK_UTILIDAD_02_agf2cf.gif"
+                  src="v1672179184/DEBOOK_UTILIDAD_02_1_zqjuaz.gif"
                   width={300}
                   height={300}
                   background="transparent"
@@ -73,7 +73,7 @@ function Carousel() {
           <div className="bg-black nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <CldImage src="v1672166343/utilidad3_vrhudr.gif" width={300} height={300} objectFit="contain" />
+                <CldImage src="v1672178832/DEBOOK_UTILIDAD_01_1_bu5hyt.gif" width={300} height={300} objectFit="contain" />
               </div>
               <h1 className="text-[18px] nm:text-[25px] magickey-7 font-bold text-center">
                 Early access to
