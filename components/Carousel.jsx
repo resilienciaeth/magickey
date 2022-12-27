@@ -16,11 +16,11 @@ function Carousel() {
       <div className="embla__container space-x-8  nm:space-x-0">
         {/* Slide 1 */}
         <div className="embla__slide nm:flex nm:flex-row nm:items-center nm:justify-center">
-          <div className="bg-black rounded-2xl nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
+          <div className="bg-[#A06038] rounded-2xl nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
                 <CldImage
-                  src="v1672166343/utilidad1_hnoeub.gif"
+                  src="v1672178832/DEBOOK_UTILIDAD_01_1_bu5hyt.gif"
                   width={300}
                   height={300}
                 />
