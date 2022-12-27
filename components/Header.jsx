@@ -26,12 +26,16 @@ function Header({ resultRef }) {
           {' '}
           of books.
         </h1>
-        <p1 className=" mt-4 text-magickey-2 text-center text-[10px] nm:text-[20px] px-10">
-          Building is fun. Doing it with a community is even better.
+        <p1 className=" mt-4 text-magickey-2 text-center text-[15px] nm:text-[20px] px-10">
+          Building is fun.
+          {' '}
+          <br />
+          {' '}
+          Doing it with a community is even better.
           <br />
           Join us in becoming the future of books.
         </p1>
-        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="mt-4 bg-white text-black rounded-md font-bold px-4 nm:px-6 py-1 nm:py-2 text-[10px] nm:text-[20px]">Get Magickey</button>
+        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="mt-4 bg-white text-black rounded-md font-bold px-4 nm:px-6 py-1 nm:py-2 text-[15px] nm:text-[20px]">Buy Magickey</button>
       </div>
     </div>
   );

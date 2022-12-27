@@ -2,17 +2,17 @@ import React from 'react';
 
 function Price() {
   return (
-    <div className="bg-[#121212] nm:mt-32 h-screen flex items-center justify-center">
-      <div className="nm:px-32">
+    <div className="bg-[#121212] nm:mt-32 flex items-center justify-center">
+      <div className="nm:px-32 flex items-center flex-col">
         <p className="text-center mt-10 text-[10px] nm:text-[15px] magickey-1">From books to ebooks to debooks.</p>
-        <h1 className="text-center magickey-1 font-bold text-[30px] nm:text-[70px] leading-[30px] nm:leading-[70px]">
+        <h1 className="text-center magickey-1 font-bold text-[30px] md:text-[70px] leading-[50px] nm:leading-[70px]">
           Your magickey
           {' '}
           <br />
           {' '}
           feels different
         </h1>
-        <p className="text-[12px] nm:text-[15px] px-6 text-center mt-6 text-magickey-2">
+        <p className="text-[15px] nm:w-[50%] nm:text-[15px] px-6 text-center mt-6 text-magickey-2">
           Your DEBOOK Magickey is your passport to all the utilities above. Inspired by communities like FLOOR, Visualize Value or Veefriends, we will use all the experience acquired through those communities to make sure that Magickey makes you feel different.
         </p>
         <div className="px-10 mt-6">

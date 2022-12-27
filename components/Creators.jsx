@@ -1,23 +1,20 @@
 import React from 'react';
-import Image from 'next/image';
-
 import { SlSocialInstagram, SlSocialTwitter } from 'react-icons/sl';
-
 import { CldImage } from 'next-cloudinary';
-import images from '../public/assets';
 
 function Creators() {
   return (
     <div className=" nm:h-[80vh] nm:flex nm:flex-row">
-      <div className="items-left flex nm:flex-col nm:w-[40%] justify-center nm:ml-20">
-        <h1 className="text-[42px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
+      <div className="items-left flex flex-col nm:flex-col nm:w-[40%] justify-center nm:ml-20">
+        <h1 className="text-[30px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
           Minds behind
           {' '}
           <br />
           {' '}
           the idea
         </h1>
-        <p className="text-[#9F8A81] text-left text-[15px] mr-10 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
+        <p className="text-[#9F8A81] px-6 text-center nm:text-left text-[15px] nm:mr-10 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
+        <p className="text-[#9F8A81] mt-4 px-6 text-center nm:text-left text-[15px] nm:mr-10 flex nm:hidden">Meet Daniel’s why, the left brain and meet Ernest why, the right brain. Both mentor-friendship and dedicated full time to the vision.</p>
       </div>
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
         <div className="px-[4rem] nm:px-0 mt-10">
@@ -50,7 +47,7 @@ function Creators() {
             </div>
             <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
-                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Daniel Huertas</h1>
+                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Dani Huertas</h1>
                 <h1 className="text-[#C3512D] text-left text-[12px]">
                   Co-Founder
                 </h1>
