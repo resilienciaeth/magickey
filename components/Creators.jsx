@@ -25,7 +25,7 @@ function Creators() {
             <div>
               <CldImage src="v1672097369/ernest_n7lfty.png" width={327} height={423} />
             </div>
-            <div className=" flex flex-row justify-start space-x-10">
+            <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
                 <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Ernest Viñas</h1>
                 <h1 className="text-[#C3512D] text-left text-[12px]">
@@ -48,7 +48,7 @@ function Creators() {
             <div>
               <CldImage src="v1672097369/dani_gstuxs.png" width={327} height={423} />
             </div>
-            <div className=" flex flex-row justify-start space-x-10">
+            <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
                 <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Daniel Huertas</h1>
                 <h1 className="text-[#C3512D] text-left text-[12px]">
