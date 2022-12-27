@@ -1,8 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
-
-import images from '../public/assets';
 import Carousel from './Carousel';
 
 function Utilities() {

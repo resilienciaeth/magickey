@@ -75,7 +75,7 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <CldImage src="/v1672166343/utilidad3_vrhudr.gif" width={300} height={300} objectFit="contain" />
+                <CldImage src="v1672166343/utilidad3_vrhudr.gif" width={300} height={300} objectFit="contain" />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
                 Early access to

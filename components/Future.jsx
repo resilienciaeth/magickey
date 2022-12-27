@@ -6,7 +6,7 @@ function Future() {
     <div className="h-[140vh] nm:h-[80vh]">
       <div className="nm:flex nm:flex-row-reverse ">
         <div className="flex mt-20 nm:mt-10 nm:w-[40%] items-center justify-center">
-          <CldImage src="/v1672097287/iphone_hcd9pe.png" width={234} height={573} />
+          <CldImage src="v1672097287/iphone_hcd9pe.png" width={234} height={573} />
           <div className="mt-[25rem] flex nm:hidden flex-col items-center absolute">
             <p className="text-center text-[10px] text-magickey-2">From books to ebooks to debooks.</p>
             <h1 className="magickey-1 font-bold leading-[40px] text-center text-[42px]">Why we believe in DEBOOK</h1>

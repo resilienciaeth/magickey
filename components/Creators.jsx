@@ -23,7 +23,7 @@ function Creators() {
         <div className="px-[4rem] nm:px-0 mt-10">
           <div className="flex max-w-[327px] flex-col py-4">
             <div>
-              <CldImage src="/v1672097369/ernest_n7lfty.png" width={327} height={423} />
+              <CldImage src="v1672097369/ernest_n7lfty.png" width={327} height={423} />
             </div>
             <div className=" flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
@@ -46,7 +46,7 @@ function Creators() {
         <div className="px-[4rem] mt-10">
           <div className="flex flex-col max-w-[327px] py-4">
             <div>
-              <CldImage src="/v1672097369/dani_gstuxs.png" width={327} height={423} />
+              <CldImage src="v1672097369/dani_gstuxs.png" width={327} height={423} />
             </div>
             <div className=" flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
