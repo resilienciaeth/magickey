@@ -29,7 +29,7 @@ function Utilities() {
         <div className="magickey-3 nm:w-[70%] mt-10 items-start justify-center flex">
           <div className="flex flex-col items-center">
             <div className=" mt-2 max-w-[200px] nm:max-w-[300px]">
-              <Image src={images.folders} width={300} height={300} objectFit="contain" />
+              <CldImage src={images.folders} width={300} height={300} objectFit="contain" />
             </div>
             <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">Access to every single debook.</h1>
             <p className="text-center mt-4 mb-10  text-white text-[10px] nm:text-[14px] px-4">

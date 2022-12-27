@@ -289,7 +289,7 @@ function mint() {
         {/*}
       <div className="mx-auto flex min-h-screen max-w-6xl flex-col p-6 md:p-12">
         <header className="flex flex-col items-center justify-center p-6 md:p-12">
-          <Image className="h-12 md:h-14" src={images.logo} width={50} height={50} />
+          <CldImage className="h-12 md:h-14" src={images.logo} width={50} height={50} />
           <p>Minting Page</p>
         </header>
         <main className="grid gap-6 rounded-md bg-black/20 p-6 md:grid-cols-2 md:p-12">

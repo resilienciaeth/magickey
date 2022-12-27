@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { FaLongArrowAltLeft, FaLongArrowAltRight, LongArrowRight } from 'react-icons/fa';
+import { CldImage } from 'next-cloudinary';
 import images from '../public/assets';
 
 function Carousel() {
@@ -20,11 +21,10 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image
-                  src="/v1672166343/utilidad1_hnoeub.gif"
+                <CldImage
+                  src="v1672166343/utilidad1_hnoeub.gif"
                   width={300}
                   height={300}
-                  objectFit="contain"
                 />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
@@ -47,11 +47,11 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image
-                  src="/v1672165683/DEBOOK_UTILIDAD_02_agf2cf.gif"
+                <CldImage
+                  src="v1672165683/DEBOOK_UTILIDAD_02_agf2cf.gif"
                   width={300}
                   height={300}
-                  objectFit="contain"
+
                 />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
@@ -75,7 +75,7 @@ function Carousel() {
           <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
-                <Image src="/v1672166343/utilidad3_vrhudr.gif" width={300} height={300} objectFit="contain" />
+                <CldImage src="/v1672166343/utilidad3_vrhudr.gif" width={300} height={300} objectFit="contain" />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
                 Early access to
