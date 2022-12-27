@@ -51,7 +51,7 @@ function mint() {
        setClaiming(true)
 
         try {
-            await contract.erc721?.claim(1);
+            await contract.erc721?.claim(quantity);
             alert('minted successfully');
             setClaiming(false);
         } catch(error) {
@@ -247,13 +247,32 @@ function mint() {
                       <p className="text-[10px] nm:text-[15px] text-center">Collectibles Sold</p>
                         <h1 className='text-center text-[30px] font-bold'>{claimedNFTSupply?.toNumber()} / 1111</h1>
                     </div>
+                    <div className={styles.quantityContainer}>
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity - 1)}
+                      disabled={quantity <= 1}
+                    >
+                      -
+                    </button>
+
+                    <h4>{quantity}</h4>
+
+                    <button
+                      className={`${styles.quantityControlButton}`}
+                      onClick={() => setQuantity(quantity + 1)}
+                      disabled={quantity >= maxClaimable}
+                    >
+                      +
+                    </button>
+                  </div>
                   </div>
                   <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
                   <CrossmintPayButton
                 clientId="ca1347b1-7ce2-49f7-8885-ad754ad8e9a5"
-                mintConfig={{"type":"thirdweb-drop","totalPrice":"0.085","quantity":"1"}}
+                mintConfig={{"type":"thirdweb-drop","totalPrice": ((0.085) * (quantity)) ,"quantity":(quantity)}}
             />
-                    {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 font-bold rounded-lg"onClick={mint} disabled={claiming}>
+                    {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
                   {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
                 </button>)}
                 {!address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[14px] py-5 font-bold rounded-lg"  onClick={connectMetamask}>

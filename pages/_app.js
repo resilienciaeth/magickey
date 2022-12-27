@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider
         attribute="class"
       >
-        <div className="font-creato min-h-screen max-h-screen">
+        <div className="font-creato min-h-screen max-h-screen bg-[#121212]">
           <Navbar />
           <Component />
           <Footer />
