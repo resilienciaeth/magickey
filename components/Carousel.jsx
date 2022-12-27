@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import Image from 'next/image';
 import { FaLongArrowAltLeft, FaLongArrowAltRight, LongArrowRight } from 'react-icons/fa';
 import { CldImage } from 'next-cloudinary';
-import images from '../public/assets';
 
 function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
@@ -25,6 +23,7 @@ function Carousel() {
                   src="v1672166343/utilidad1_hnoeub.gif"
                   width={300}
                   height={300}
+
                 />
               </div>
               <h1 className="text-[18px] nm:text-[25px] text-white font-bold text-center">
