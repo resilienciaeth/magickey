@@ -42,14 +42,14 @@ function Carousel() {
         </div>
         {/* Slide 2 */}
         <div className="embla__slide nm:flex nm:flex-row nm:items-center nm:justify-center">
-          <div className="bg-black nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
+          <div className="magickey-3 nm:w-[70%] h-[500px] nm:h-[600px]  mt-10 items-center justify-center flex">
             <div className="flex flex-col items-center">
               <div className="mt-2 max-w-[200px] nm:max-w-[300px]">
                 <CldImage
                   src="v1672165683/DEBOOK_UTILIDAD_02_agf2cf.gif"
                   width={300}
                   height={300}
-
+                  background="transparent"
                 />
               </div>
               <h1 className="text-[18px] nm:text-[25px] magickey-7 font-bold text-center">
