@@ -38,7 +38,8 @@ function Creators() {
                 </div>
               </div>
             </div>
-            <div className=" mt-2 text-center text-white text-[14px]">'My relationship with books has been very special. In 2019 I invented “SYLPROGRAMS” a particular self-development program that literally helped people rewrite their own stories. I am not a passionate reader but I am a highly passionate learner. I love learning by doing because my brain gets hooked on every good idea. There are many people like me and I feel the duty to create a way books can be more than just letters so they can be more valuable and enjoyed by everyone. THATS DEBOOK'</div>
+            {/*
+            <div className=" mt-2 text-center text-white text-[14px]">'My relationship with books has been very special. In 2019 I invented “SYLPROGRAMS” a particular self-development program that literally helped people rewrite their own stories. I am not a passionate reader but I am a highly passionate learner. I love learning by doing because my brain gets hooked on every good idea. There are many people like me and I feel the duty to create a way books can be more than just letters so they can be more valuable and enjoyed by everyone. THATS DEBOOK'</div> */}
           </div>
         </div>
         <div className="px-[4rem] mt-10">
@@ -60,7 +61,8 @@ function Creators() {
                 </div>
               </div>
             </div>
-            <div className=" mt-2 text-center text-white text-[14px]">'I love books, and as an author I know there are many struggles when it comes to books. That is why I am passionate about DEBOOK. I want authors to know their readers, and I want readers to get access to like minded people. I really believe communities change the world. Let's do it together'</div>
+            {/*
+            <div className=" mt-2 text-center text-white text-[14px]">'I love books, and as an author I know there are many struggles when it comes to books. That is why I am passionate about DEBOOK. I want authors to know their readers, and I want readers to get access to like minded people. I really believe communities change the world. Let's do it together'</div> */}
           </div>
         </div>
       </div>
