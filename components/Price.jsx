@@ -23,7 +23,7 @@ function Price() {
             </div>
             <div className="flex flex-row space-x-4 nm:space-x-20">
               <div className="flex flex-col">
-                <p className="text-white mt-10 nm:mt-0  text-[12px]">Max Amount Per Person</p>
+                <p className="text-white mt-10 nm:mt-0  text-[12px]">Max Amount Per Visionary</p>
                 <h1 className="magickey-4 text-[40px] font-bold">10</h1>
               </div>
               <div>
@@ -32,10 +32,10 @@ function Price() {
               </div>
             </div>
             <div>
-              <p className="text-white mt-10 nm:mt-0  text-[12px]">Launch Day</p>
-              <h1 className="magickey-4 text-[40px] font-bold">33/33/3333</h1>
+              <p className="text-white mt-10 nm:mt-0  text-[12px]">Deployment Day</p>
+              <h1 className="magickey-4 text-[40px] font-bold">DEC 28 2022</h1>
             </div>
-            <p className="text-[6px] text-white mt-4 flex nm:hidden">*DEBOOK wallet will keep 333 for future uses such as rewarding our community, workers, and audience, as well as using them as a gift to the people that have inspired us throughout the years to become the version of ourselves that we are today.</p>
+            <p className="text-[6px] text-white mt-4 flex nm:hidden">*DEBOOK wallet will keep 333 for future uses such as rewarding our community, team, and audience, as well as using them as a gift to the people that have inspired us throughout the years to become the version of ourselves that we are today.</p>
           </div>
         </div>
       </div>

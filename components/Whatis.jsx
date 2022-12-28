@@ -47,12 +47,12 @@ function Whatis() {
           </div>
           <div className="hidden nm:flex nm:mt-10 nm:flex-col items-center">
             <p className="mt-10 text-[#9F8A81] text-[15px]">
-              That is just a first glance on the idea; having a debook will be memorable for authors and readers.
+              Our purpose is to make books fairer for authors and readers, bring people together, and innovate how much value you get from a book.
             </p>
             <p className="text-[#9F8A81] text-[15px]">
               Learn more in our
               {' '}
-              <span className="underline cursor-pointer cursor-pointer font-bold"> MANIFIESTO.</span>
+              <span className="underline cursor-pointer font-bold"> MANIFIESTO.</span>
             </p>
           </div>
         </div>

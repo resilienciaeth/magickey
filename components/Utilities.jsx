@@ -8,10 +8,10 @@ function Utilities() {
       <div className="flex flex-col items-center nm:items-start nm:justify-center nm:w-[50%] nm:ml-10 ">
         <p className="text-[10px] nm:text-[15px] mt-20 nm:mt-0 text-[#EE7015] text-center font-bold nm:text-left">We’ll show you what creating together truly is.</p>
         <h1 className="pb-5 nm:pb-0 text-center nm:text-left magickey-2 text-[40px] md:text-[70px] font-bold leading-[40px] nm:leading-[80px]">
-          Real utility
+          Authentic value
           <br />
           {' '}
-          since day one.
+          for the visionaries
         </h1>
         <p className="hidden nm:flex mt-5 text-[15px] text-black">
           At DEBOOK, we believe that communities move the world. That is why we believe that building this platform in front of a community will help us accelerate the adoption of these new books. Your feedback will help us in a massive way to make things better every single day.

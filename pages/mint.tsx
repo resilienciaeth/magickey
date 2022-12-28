@@ -24,14 +24,14 @@ import {
 
 import images from '../public/assets';
 
-const contractAddress = "0x25B24a338c5021d6918317394fA00Cb984b5615b"
+const contractAddress = "0x4C50852f241cCC9CD421D8403E4Ab120c6cE9733"
 
 function mint() {
 
   {/* Crossmint */}
 
-  const nftCost = 0.085;
-  const clientId = "ca1347b1-7ce2-49f7-8885-ad754ad8e9a5";
+  const nftCost = 0.013;
+  const clientId = "c90aef87-93fe-4b0f-897f-5d35ea4f2034";
 
   const [mintAmount, setMintAmount] = useState(1);
 
@@ -254,9 +254,10 @@ function mint() {
     return (
             <div className='bg-[#121212] h-screen'>
             <div className='flex flex-row'>
-            <div className="h-[90vh] w-[100%] nm:w-[50%] flex items-center justify-center flex-col">
-                  <div className="font-bold text-center flex flex-col  justify-center text-[35px] nm:text-[70px] nm:ml-6 text-white">
-                    <h1 className='text-center magickey-1'> DEBOOK MAGICKEY</h1>
+            <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">
+                  <div className="font-bold text-center flex flex-col  justify-center items-center text-[35px] nm:text-[70px] nm:ml-6 text-white">
+                    <h1 className='text-center magickey-1 leading-[40px] nm:leading-[70px]'>DEBOOK <br /> MAGICKEY</h1>
+                    <p className="hidden text-center nm:flex mt-5 text-[15px] text-white">Building the future of books together.</p>
                   </div>
                   <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
                     <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">Price</p>
@@ -274,7 +275,8 @@ function mint() {
                       -
                     </button>
 
-                    <h4 className='text-[30px]'>{quantity}</h4>
+                    <h4 className='text-[30px] text-white'>{quantity}</h4>
+                  
 
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -283,76 +285,33 @@ function mint() {
                     >
                       +
                     </button>
+                    
                   </div>
+                  <h4 className='text-[10px] px-10 text-center text-white'>If you are paying with Credit/Debit card you can only do 1 Magickey per transaction.</h4>
                   </div>
                   <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
                   <CrossmintPayButton
-                clientId="ca1347b1-7ce2-49f7-8885-ad754ad8e9a5"
-                environment="production"
+
+                clientId="c90aef87-93fe-4b0f-897f-5d35ea4f2034"
                 mintConfig={{ 
                 type :"thirdweb-drop",
-                totalPrice: (0.085 * quantity).toString(), 
+                totalPrice: (0.1265 * quantity).toString(), 
                 quantity : (quantity) }}
             />
-                    {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
+                    {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 nm:py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
                   {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
                 </button>)}
-                {!address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[14px] py-5 font-bold rounded-lg"  onClick={connectMetamask}>
+                {!address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[14px] py-3 nm:py-5 font-bold rounded-lg"  onClick={connectMetamask}>
                 BUY WITH CRYPTO
                 </button>)}
                   </div>
                 </div>
-                <div className='hidden nm:flex w-[50%]'>
-                    <CldImage alt='mint' src='v1672182763/Libro_rr2okq.png' width={2250} height={3394} />
+                <div className='hidden nm:flex w-[45%]'>
+                    <CldImage alt='mint' src='v1672182763/Libro_rr2okq.png' width={1250} height={2394} />
                 </div>
                 </div>
                 </div>
-          )
-        {/*}
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col p-6 md:p-12">
-        <header className="flex flex-col items-center justify-center p-6 md:p-12">
-          <CldImage className="h-12 md:h-14" src={images.logo} width={50} height={50} />
-          <p>Minting Page</p>
-        </header>
-        <main className="grid gap-6 rounded-md bg-black/20 p-6 md:grid-cols-2 md:p-12">
-          <div className="flex flex-col items-center justify-center space-y-6">
-            <h1 className="text-2xl font-bold text-secondary">
-              {contractMetadata?.name}
-            </h1>
-            <p className="text-center leading-relaxed">
-              {contractMetadata?.description}
-            </p>
-          </div>
-  
-          <div className="flex flex-col items-center">
-            <div className="flex w-full max-w-sm flex-col space-y-4">
-              <div className="aspect-square w-full overflow-hidden rounded-md">
-                <img className="aspect-square object-cover" src={contractMetadata?.image} />
-              </div>
-  
-              <div className="flex max-w-sm justify-between">
-                <p>Collectibles Sold</p>
-                <p>{claimedNFTSupply?.toNumber()} / 1000</p>
-              </div>
-  
-              <div className="flex justify-center">
-                {address && (<button className="rounded-full bg-black px-6 py-2 text-white hover:bg-opacity-75" onClick={mint} disabled={claiming}>
-                  {claiming ? "Claiming Collectible" : "Buy Collectible"}
-                </button>)}
-                {!address && (<button className="rounded-full bg-black px-6 py-2 text-white hover:bg-opacity-75" onClick={connectMetamask}>
-                Connect Wallet
-                </button>)}
-              </div>
-            </div>
-          </div>
-        </main>
-        <footer className="flex items-center justify-center space-x-2 p-6">
-          <p className="text-sm">Powered by</p>
-          <img className="h-4 md:h-4" src='../public/assets/logo.png'/>
-        </footer>
-      </div>
-    */}
-    ;
+    )
   }
   
   export default mint;
