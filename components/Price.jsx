@@ -5,8 +5,8 @@ function Price() {
     <div className="bg-[#121212] nm:mt-32 flex items-center justify-center">
       <div className="nm:px-32 flex items-center flex-col">
         <p className="text-center mt-10 text-[10px] nm:text-[15px] magickey-1">From books to ebooks to debooks.</p>
-        <h1 className="text-center magickey-1 font-bold text-[30px] md:text-[70px] leading-[50px] nm:leading-[70px]">
-          Your magickey
+        <h1 className="text-center magickey-1 font-bold text-[35px] md:text-[70px] leading-[50px] nm:leading-[70px]">
+          Your Magickey
           {' '}
           <br />
           {' '}
