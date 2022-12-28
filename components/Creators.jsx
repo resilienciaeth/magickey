@@ -20,10 +20,11 @@ function Creators() {
         <div className="px-[4rem] nm:px-0 mt-10">
           <div className="flex max-w-[327px] flex-col py-4">
             <div>
-              <CldImage
-                alt="Ernest"
-                src="v1672097369/ernest_n7lfty.png"
+              <video
+                poster="https://res.cloudinary.com/drxuutjwr/image/upload/v1672097369/ernest_n7lfty.png"
+                src="https://res.cloudinary.com/drxuutjwr/video/upload/v1672245857/ernestw_djthhd.mp4"
                 width={327}
+                controls
                 height={423}
               />
             </div>
