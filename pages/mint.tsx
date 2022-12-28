@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head';
 import {
     useActiveClaimConditionForWallet,
     useAddress,
@@ -254,6 +255,10 @@ function mint() {
     
     return (
             <div className='bg-[#121212] h-screen'>
+              <Head>
+      <title>DEBOOK MAGICKEY - Mint</title>
+      </Head>
+      <meta name="description" content="The future of books. Get a MAGICKEY now and join us on creating the future of books" />
             <Navbar />
             <div className='flex flex-row'>
             <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">

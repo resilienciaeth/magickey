@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Header from '../components/Header';
 import Whatis from '../components/Whatis';
 import Utilities from '../components/Utilities';
@@ -15,6 +16,10 @@ import Footer from '../components/Footer';
 
 const index = () => (
   <div>
+    <Head>
+      <title>DEBOOK MAGICKEY - Home</title>
+      <meta name="description" content="The future of books. Get a MAGICKEY now and join us on creating the future of books" />
+    </Head>
     <Navbar />
     <Header />
     <Whatis />
