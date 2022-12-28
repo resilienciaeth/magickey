@@ -20,12 +20,30 @@ import {
   import styles from "../styles/Theme.module.css";
   import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
   import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
+  import { CldImage } from 'next-cloudinary';
 
 import images from '../public/assets';
 
 const contractAddress = "0x25B24a338c5021d6918317394fA00Cb984b5615b"
 
 function mint() {
+
+  {/* Crossmint */}
+
+  const nftCost = 0.085;
+  const clientId = "ca1347b1-7ce2-49f7-8885-ad754ad8e9a5";
+
+  const [mintAmount, setMintAmount] = useState(1);
+
+  const handleDecrement = () => {
+    if (mintAmount <= 1) return;
+    setMintAmount(mintAmount - 1);
+  }
+
+  const handleIncrement = () => {
+    if (mintAmount >= 3) return;
+    setMintAmount(mintAmount + 1);
+  }
     
 
     const [claiming, setClaiming] = useState(false);
@@ -240,7 +258,7 @@ function mint() {
                   <div className="font-bold text-center flex flex-col  justify-center text-[35px] nm:text-[70px] nm:ml-6 text-white">
                     <h1 className='text-center magickey-1'>MAGICKEY</h1>
                   </div>
-                  <div className="mint-1 mt-4 nm:mt-10 w-[70%] nm:w-[40%] nm:min-w-[300px] rounded-3xl flex flex-col items-center">
+                  <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
                     <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">Price</p>
                     <p className="text-[35px] nm:text-[50px] font-bold text-white">$150 USD</p>
                     <div className="flex flex-col mt-4 mb-6 nm:mb-10 text-white">
@@ -256,7 +274,7 @@ function mint() {
                       -
                     </button>
 
-                    <h4>{quantity}</h4>
+                    <h4 className='text-[30px]'>{quantity}</h4>
 
                     <button
                       className={`${styles.quantityControlButton}`}
@@ -269,8 +287,13 @@ function mint() {
                   </div>
                   <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
                   <CrossmintPayButton
+                className="bg-blue-500"
                 clientId="ca1347b1-7ce2-49f7-8885-ad754ad8e9a5"
-                mintConfig={{"type":"thirdweb-drop","totalPrice": ((0.085) * (quantity)) ,"quantity":(quantity)}}
+                environment="production"
+                mintConfig={{ 
+                type :"thirdweb-drop",
+                totalPrice: (0.085 * quantity).toString(), 
+                quantity : (quantity) }}
             />
                     {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
                   {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
@@ -281,7 +304,7 @@ function mint() {
                   </div>
                 </div>
                 <div className='hidden nm:flex w-[50%]'>
-                    <Image alt='mint' src={images.iphone} />
+                    <CldImage alt='mint' src='v1672182763/Libro_rr2okq.png' width={2250} height={3394} />
                 </div>
                 </div>
                 </div>

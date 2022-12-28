@@ -158,15 +158,18 @@
   font-size: 1rem;
 }
 
+.button.xmintbtn {
+  background-color: blueviolet;
+}
+
 .quantityControlButton {
   cursor: pointer;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  font-size: 3rem;
   background-color: transparent;
-  border: 1px solid grey;
   color: #fff;
+  font-size:  40px;
 }
 
 .quantityControlButton:disabled {

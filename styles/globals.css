@@ -122,6 +122,14 @@ background-clip: text;
 
 }
 
+button.xmint-btn span {
+  display: none;
+}
+button.xmint-btn:after {
+ content: "Custom Buy Text";
+ color: white; 
+}
+
 .magickey-5 {
     background: linear-gradient(96.17deg, #D29F8F 14.4%, #E88A34 93.67%);
 -webkit-background-clip: text;
