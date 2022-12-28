@@ -19,8 +19,9 @@ function Creators() {
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
         <div className="px-[4rem] nm:px-0 mt-10">
           <div className="flex max-w-[327px] flex-col py-4">
-            <div>
+            <div className="">
               <video
+                className="max-h-[423px]"
                 poster="https://res.cloudinary.com/drxuutjwr/image/upload/v1672097369/ernest_n7lfty.png"
                 src="https://res.cloudinary.com/drxuutjwr/video/upload/v1672245857/ernestw_djthhd.mp4"
                 width={327}
