@@ -9,7 +9,14 @@ function Future() {
           <CldImage src="v1672097287/iphone_hcd9pe.png" width={234} height={573} />
           <div className="mt-[25rem] flex nm:hidden flex-col items-center absolute">
             <p className="text-center text-[10px] text-magickey-2">From books to ebooks to debooks.</p>
-            <h1 className="magickey-1 font-bold leading-[40px] text-center text-[30px]"> Why DEBOOK, why us, why today?</h1>
+            <h1 className="magickey-1 font-bold leading-[40px] text-center text-[30px]">
+              {' '}
+              Why DEBOOK, why us,
+              {' '}
+              <br />
+              {' '}
+              why today?
+            </h1>
           </div>
         </div>
         <div className="px-10 nm:px-0 nm:ml-[6rem] nm:w-[60%] nm:flex nm:flex-col nm:justify-center">
