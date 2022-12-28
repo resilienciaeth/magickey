@@ -3,7 +3,7 @@ import React from 'react';
 
 function Comparation() {
   return (
-    <div className="flex flex-col nm:flex-row nm:h-[90vh]">
+    <div className="flex flex-col nm:flex-row ">
       <div className="nm:w-[50%] flex flex-col justify-center px-10">
         <h1 className="text-[40px] leading-[50px] font-bold nm:text-[50px] magickey-7">
           The differences between
