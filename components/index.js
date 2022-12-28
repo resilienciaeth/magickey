@@ -12,5 +12,6 @@ import Carousel from './Carousel';
 import Ourwhy from './Ourwhy';
 import Limited from './Limited';
 import Comparation from './Comparation';
+import Navbarmint from './Navbarmint';
 
-export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Carousel, Ourwhy, Limited, Comparation];
+export default [Navbar, Footer, Header, Whatis, Utilities, Price, Percentages, Future, Creators, Getyours, Carousel, Ourwhy, Limited, Comparation, Navbarmint];

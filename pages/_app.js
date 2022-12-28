@@ -15,9 +15,7 @@ function MyApp({ Component, pageProps }) {
         attribute="class"
       >
         <div className="font-creato min-h-screen max-h-screen bg-[#121212]">
-          <Navbar />
           <Component />
-          <Footer />
         </div>
 
         <Script src="https://kit.fontawesome.com/4e0b8e54bb.js" crossOrigin="anonymous" />

@@ -21,6 +21,7 @@ import {
   import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
   import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
   import { CldImage } from 'next-cloudinary';
+  import Navbar from '../components/Navbarmint';
 
 import images from '../public/assets';
 
@@ -253,6 +254,7 @@ function mint() {
     
     return (
             <div className='bg-[#121212] h-screen'>
+            <Navbar />
             <div className='flex flex-row'>
             <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">
                   <div className="font-bold text-center flex flex-col  justify-center items-center text-[35px] nm:text-[70px] nm:ml-6 text-white">

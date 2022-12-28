@@ -10,9 +10,12 @@ import Getyours from '../components/Getyours';
 import Ourwhy from '../components/Ourwhy';
 import Limited from '../components/Limited';
 import Comparation from '../components/Comparation';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const index = () => (
   <div>
+    <Navbar />
     <Header />
     <Whatis />
     <Comparation />
@@ -24,6 +27,7 @@ const index = () => (
     <Ourwhy />
     <Creators />
     <Getyours />
+    <Footer />
   </div>
 );
 

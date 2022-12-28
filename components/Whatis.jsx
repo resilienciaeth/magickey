@@ -52,7 +52,7 @@ function Whatis() {
             <p className="text-[#9F8A81] text-[15px]">
               Learn more in our
               {' '}
-              <span className="underline cursor-pointer font-bold"> MANIFIESTO.</span>
+              <span onClick={() => window.open('https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5')} className="underline cursor-pointer font-bold"> MANIFIESTO.</span>
             </p>
           </div>
         </div>
