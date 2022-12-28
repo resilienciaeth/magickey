@@ -256,7 +256,7 @@ function mint() {
             <div className='flex flex-row'>
             <div className="h-[90vh] w-[100%] nm:w-[50%] flex items-center justify-center flex-col">
                   <div className="font-bold text-center flex flex-col  justify-center text-[35px] nm:text-[70px] nm:ml-6 text-white">
-                    <h1 className='text-center magickey-1'>MAGICKEY</h1>
+                    <h1 className='text-center magickey-1'> DEBOOK MAGICKEY</h1>
                   </div>
                   <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
                     <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">Price</p>
@@ -287,7 +287,6 @@ function mint() {
                   </div>
                   <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
                   <CrossmintPayButton
-                className="bg-blue-500"
                 clientId="ca1347b1-7ce2-49f7-8885-ad754ad8e9a5"
                 environment="production"
                 mintConfig={{ 

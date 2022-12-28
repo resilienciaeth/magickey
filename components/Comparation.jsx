@@ -5,7 +5,7 @@ function Comparation() {
   return (
     <div className="flex flex-col nm:flex-row nm:h-[90vh]">
       <div className="nm:w-[50%] flex flex-col justify-center px-10">
-        <h1 className="text-[30px] font-bold nm:text-[50px] magickey-7">
+        <h1 className="text-[40px] font-bold nm:text-[50px] magickey-7">
           The differences between
           {' '}
           <br />
@@ -30,7 +30,12 @@ function Comparation() {
         </div>
       </div>
       <div className="nm:w-[50%] flex items-start">
-        <CldImage src="v1672182763/Libro_rr2okq.png" width={2250} height={3394} />
+        <CldImage
+          alt="book"
+          src="v1672182763/Libro_rr2okq.png"
+          width={2250}
+          height={3394}
+        />
       </div>
     </div>
   );

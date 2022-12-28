@@ -6,21 +6,26 @@ function Creators() {
   return (
     <div className=" nm:h-[80vh] nm:flex nm:flex-row">
       <div className="items-left flex flex-col nm:flex-col nm:w-[40%] justify-center nm:ml-20">
-        <h1 className="text-[30px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
+        <h1 className="text-[40px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
           Minds behind
           {' '}
           <br />
           {' '}
           the idea
         </h1>
-        <p className="text-[#9F8A81] px-6 text-center nm:text-left text-[15px] nm:mr-10 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
+        <p className="text-[#9F8A81] text-center nm:text-left text-[15px] nm:mr-12 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
         <p className="text-[#9F8A81] mt-4 px-6 text-center nm:text-left text-[15px] nm:mr-10 flex nm:hidden">Meet Daniel’s why, the left brain and meet Ernest why, the right brain. Both mentor-friendship and dedicated full time to the vision.</p>
       </div>
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
         <div className="px-[4rem] nm:px-0 mt-10">
           <div className="flex max-w-[327px] flex-col py-4">
             <div>
-              <CldImage src="v1672097369/ernest_n7lfty.png" width={327} height={423} />
+              <CldImage
+                alt="Ernest"
+                src="v1672097369/ernest_n7lfty.png"
+                width={327}
+                height={423}
+              />
             </div>
             <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
@@ -43,7 +48,7 @@ function Creators() {
         <div className="px-[4rem] mt-10">
           <div className="flex flex-col max-w-[327px] py-4">
             <div>
-              <CldImage src="v1672097369/dani_gstuxs.png" width={327} height={423} />
+              <CldImage alt="Dani" src="v1672097369/dani_gstuxs.png" width={327} height={423} />
             </div>
             <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">

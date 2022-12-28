@@ -5,7 +5,7 @@ function Whatis() {
     <div className="h-[150vh] nm:h-[100vh] bg-[#121212] px-10">
       <div className="nm:mt-20">
         <p className="text-center text-[10px] md:text-[15px] magickey-1">A book is a book, and DEBOOK is also...</p>
-        <h1 className="magickey-1 text-center text-[30px] md:text-[70px] font-bold">What is DEBOOK?</h1>
+        <h1 className="magickey-1 text-center text-[40px] md:text-[70px] font-bold">What is DEBOOK?</h1>
         <div className="h-[90vh] nm:px-20 space-y-4 nm:space-y-0 nm:space-x-14 flex flex-col mt-10">
           <div className="nm:flex nm:flex-row space-y-4 nm:space-y-0 nm:space-x-14">
             <div className=" orange-1 h-[40vh] nm:h-[40vh] nm:w-[33%]  rounded-xl flex items-center justify-center flex-col">

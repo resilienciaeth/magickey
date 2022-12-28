@@ -7,7 +7,7 @@ function Footer() {
       <div className="flex flex-col nm:flex-row items-center justify-start nm:justify-between">
         <div className="flex flex-col">
           <div className="mt-10">
-            <CldImage src="v1672098070/logofooter_nfszju.png" width={162} height={32} />
+            <CldImage alt="logo" src="v1672098070/logofooter_nfszju.png" width={162} height={32} />
           </div>
           <div className="flex flex-col mt-5 nm:mt-20 space-y-2">
             <p className="text-debook-1 text-center nm:text-left text-[15px]  nm:text-[18px] cursor-pointer">Privacy Policy</p>

@@ -15,10 +15,10 @@ const index = () => (
   <div>
     <Header />
     <Whatis />
+    <Comparation />
     <Utilities />
     <Price />
     <Limited />
-    <Comparation />
     <Percentages />
     <Future />
     <Ourwhy />

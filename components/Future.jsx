@@ -6,16 +6,20 @@ function Future() {
     <div className=" nm:h-[80vh]">
       <div className="nm:flex nm:flex-row-reverse ">
         <div className="flex mt-20 nm:mt-10 nm:w-[40%] items-center justify-center">
-          <CldImage src="v1672097287/iphone_hcd9pe.png" width={234} height={573} />
+          <CldImage alt="iphone" src="v1672097287/iphone_hcd9pe.png" width={234} height={573} />
           <div className="mt-[25rem] flex nm:hidden flex-col items-center absolute">
             <p className="text-center text-[10px] text-magickey-2">From books to ebooks to debooks.</p>
-            <h1 className="magickey-1 font-bold leading-[40px] text-center text-[30px]">
+            <h1 className="magickey-1 font-bold leading-[40px] text-center text-[40px]">
               {' '}
-              Why DEBOOK, why us,
+              WHY DEBOOK,
               {' '}
               <br />
               {' '}
-              why today?
+              WHY US,
+              {' '}
+              <br />
+              {' '}
+              WHY TODAY?
             </h1>
           </div>
         </div>
@@ -23,11 +27,15 @@ function Future() {
           <div className="hidden nm:flex nm:flex-col ">
             <p className="text-center nm:text-left text-[10px] nm:text-[12px] text-magickey-2">From books to ebooks to debooks.</p>
             <h1 className="magickey-1 font-bold leading-[40px] nm:leading-[80px] text-center nm:text-left text-[42px] nm:text-[70px]">
-              Why DEBOOK, why us
+              WHY DEBOOK,
+              {' '}
+              <br />
+              {' '}
+              WHY US,
               {' '}
               <br className="hidden nm:flex" />
               {' '}
-              why today?
+              WHY TODAY?
             </h1>
           </div>
           <p className="text-center nm:mr-20 nm:mt-4 nm:text-left text-[15px] nm:text-[15px] leading-[20px] text-[#9F8A81]">
@@ -41,11 +49,11 @@ function Future() {
             Because NOW the biggest blockchain projects are being built, just like Amazon in 1996 with internet revolution. We believe DEBOOK can be part of that blockchain revolution. Join us.
           </p>
           <div className="nm:flex hidden items-start justify-start mt-6">
-            <button className="magickey-6 text-[12px] px-4 py-2 font-bold  text-black">View Manifesto</button>
+            <button onClick={() => window.open('https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5')} type="button" className="magickey-6 text-[12px] px-4 py-2 font-bold  text-black">View Manifesto</button>
           </div>
         </div>
         <div className="flex items-center justify-center mt-6">
-          <button className="magickey-6 flex nm:hidden text-[12px] px-4 py-2 font-bold  text-black">View Manifesto</button>
+          <button type="button" onClick={() => window.open('https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5')} className="magickey-6 flex nm:hidden text-[12px] px-4 py-2 font-bold  text-black">View Manifesto</button>
         </div>
       </div>
     </div>

@@ -6,11 +6,15 @@ function Getyours() {
       <div className="flex flex-col mt-10 items-center nm:justify-center">
         <p className="magickey-1 text-center text-[12px] nm:text-[15px]">the future of books.</p>
         <h1 className="text-center font-bold magickey-1 text-[40px] nm:text-[70px] leading-[40px] nm:leading-[70px]">
-          DEBOOK
+          LET THE
           {' '}
-          <br className="flex md:hidden" />
+          <br className="" />
           {' '}
-          MAGICKEY
+          MAGIC BEGIN
+          {' '}
+          <br className="" />
+          {' '}
+          IN 2023
         </h1>
         <p className="text-magickey-2 mt-4 px-10 text-center text-[15px] nm:text-[15px]">
           If you have made it all the way here, we want to say that we appreciate your time,
@@ -19,7 +23,7 @@ function Getyours() {
           {' '}
           and we want curious people like you to help us make DEBOOK the future of books. Join us.
         </p>
-        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">Get your Magickey</button>
+        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">Buy your Magickey</button>
       </div>
     </div>
   );
