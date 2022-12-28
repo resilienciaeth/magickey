@@ -1,6 +1,8 @@
 import React from 'react';
 import { SlSocialInstagram, SlSocialTwitter } from 'react-icons/sl';
 import { CldImage } from 'next-cloudinary';
+import { BigPlayButton, Player } from 'video-react';
+import 'node_modules/video-react/dist/video-react.css';
 
 function Creators() {
   return (

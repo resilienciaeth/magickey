@@ -7,7 +7,7 @@ function Utilities() {
     <div className=" py-10 nm:h-[100vh] flex flex-col nm:flex-row grey-1 font-creato px-10">
       <div className="flex flex-col items-center nm:items-start nm:justify-center nm:w-[50%] nm:ml-10 ">
         <p className="text-[10px] nm:text-[15px] mt-20 nm:mt-0 text-[#EE7015] text-center font-bold nm:text-left">We’ll show you what creating together truly is.</p>
-        <h1 className="text-center nm:text-left magickey-2 text-[40px] md:text-[70px] font-bold leading-[50px] nm:leading-[80px]">
+        <h1 className="pb-5 nm:pb-0 text-center nm:text-left magickey-2 text-[40px] md:text-[70px] font-bold leading-[40px] nm:leading-[80px]">
           Real utility
           <br />
           {' '}

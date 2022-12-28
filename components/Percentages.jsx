@@ -4,7 +4,7 @@ function Percentages() {
   return (
     <div className=" py-10 px-10 nm:flex nm:flex-col ">
       <div>
-        <h1 className="magickey-7 text-center text-[40px] nm:text-[70px] font-bold leading-[50px] nm:leading-[80px]">
+        <h1 className="magickey-7 text-center text-[40px] nm:text-[70px] font-bold leading-[40px] nm:leading-[80px]">
           Building with transparency
           {' '}
           <br className="flex nm:hidden" />
