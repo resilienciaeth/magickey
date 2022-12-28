@@ -264,7 +264,7 @@ function mint() {
             <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">
                   <div className="font-bold text-center flex flex-col  justify-center items-center text-[35px] nm:text-[70px] nm:ml-6 text-white">
                     <h1 className='text-center magickey-1 leading-[40px] nm:leading-[70px]'>DEBOOK <br /> MAGICKEY</h1>
-                    <p className="hidden text-center nm:flex mt-5 text-[15px] text-white">Building the future of books together.</p>
+                    <p className=" text-center flex mt-5 text-[15px] text-white">Building the future of books together.</p>
                   </div>
                   <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
                     <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">Price</p>
