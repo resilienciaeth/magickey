@@ -20,7 +20,7 @@ function Percentages() {
               30%
               {' '}
               <br />
-              <span className="text-[30px]">to Expansion</span>
+              <span className="text-[30px]">to Technology</span>
             </h1>
             <p className=" text-[#3D3D3D] text-[15px] nm:text-[18px] text-center px-4 mt-6">
               Developers, we want you to help us build the future of books. All the development so far has been done by our founders, and we want you to help them make DEBOOK a better product. This money will help us onboard more developers to the team so we can ship faster and better.
