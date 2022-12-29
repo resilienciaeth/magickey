@@ -41,7 +41,7 @@ function Whatis() {
                 TOKENIZATION TOOL
               </h1>
               <p className="text-white text-[15px] md:text-[17px] text-center px-4 md:px-6 mt-6">
-                Each debook is a tokenized digital collectible. This gives you complete ownership, and gives many benefits to the author, such as control over their book's community, content.
+                Each debook is a tokenized digital collectible. This gives you complete ownership, and gives many benefits to the author, such as control over their book's community and content.
               </p>
             </div>
           </div>

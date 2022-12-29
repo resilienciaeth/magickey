@@ -17,7 +17,7 @@ function Percentages() {
         <div className=" nm:h-auto space-y-4 nm:space-y-0 nm:space-x-10 mt-10 nm:flex nm:flex-row">
           <div className="magickey-8 h-[60vh] nm:w-[33%] rounded-xl flex items-center justify-center flex-col ">
             <h1 className="text-[40px] nm:text-[60px] magickey-9 text-center font-bold ">
-              30%
+              35%
               {' '}
               <br />
               <span className="text-[30px]">to Technology</span>
@@ -39,7 +39,7 @@ function Percentages() {
           </div>
           <div className="magickey-8 h-[60vh] nm:w-[33%] rounded-xl flex items-center justify-center flex-col ">
             <h1 className="text-[40px] nm:text-[60px] magickey-9 text-center font-bold ">
-              35%
+              30%
               {' '}
               <br />
               <span className="text-[30px]">to the Founders</span>
