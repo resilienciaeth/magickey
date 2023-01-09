@@ -19,7 +19,7 @@ const index = () => (
     <Head>
       <title>DEBOOK MAGICKEY - Home</title>
       <meta name="description" content="The future of books. Get a MAGICKEY now and join us on creating the future of books" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:site_id" content="1547000128434835464" />
       <meta name="twitter:title" content="The future of books" />
       <meta name="twitter:image" content="https://res.cloudinary.com/drxuutjwr/image/upload/v1672258550/debook-art_yawpmi.png" />
