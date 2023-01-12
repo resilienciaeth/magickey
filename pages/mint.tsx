@@ -294,7 +294,6 @@ function mint() {
                     </button>
                     
                   </div>
-                  <h4 className='text-[10px] px-10 text-center text-white'>If you are paying with Credit/Debit card you can only do 1 Magickey per transaction.</h4>
                   </div>
                   <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
                   <CrossmintPayButton
