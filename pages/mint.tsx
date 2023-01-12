@@ -302,7 +302,7 @@ function mint() {
                 clientId="c90aef87-93fe-4b0f-897f-5d35ea4f2034"
                 mintConfig={{ 
                 type :"thirdweb-drop",
-                totalPrice: (0.1196 * quantity).toString(), 
+                totalPrice: (0.106 * quantity).toString(), 
                 quantity : (quantity) }}
             />
                     {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 nm:py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
