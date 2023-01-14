@@ -1,36 +1,37 @@
-import Image from 'next/image'
-import Head from 'next/head';
+import Image from "next/image";
+import Head from "next/head";
 import {
-    useActiveClaimConditionForWallet,
-    useAddress,
-    useClaimConditions,
-    useClaimedNFTSupply,
-    useClaimerProofs,
-    useClaimIneligibilityReasons,
-    useContract,
-    useContractMetadata,
-    useUnclaimedNFTSupply,
-    useMetamask,
-    useNetworkMismatch,
-    useNetwork,
-    ChainId,
-  } from "@thirdweb-dev/react";
-  import { BigNumber, utils } from "ethers";
-  import type { NextPage } from "next";
-  import { useMemo, useState } from "react";
-  import styles from "../styles/Theme.module.css";
-  import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-  import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
-  import { CldImage } from 'next-cloudinary';
-  import Navbar from '../components/Navbarmint';
+  useActiveClaimConditionForWallet,
+  useAddress,
+  useClaimConditions,
+  useClaimedNFTSupply,
+  useClaimerProofs,
+  useClaimIneligibilityReasons,
+  useContract,
+  useContractMetadata,
+  useUnclaimedNFTSupply,
+  useMetamask,
+  useNetworkMismatch,
+  useNetwork,
+  ChainId,
+} from "@thirdweb-dev/react";
+import { BigNumber, utils } from "ethers";
+import type { NextPage } from "next";
+import { useMemo, useState } from "react";
+import styles from "../styles/Theme.module.css";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
+import { CldImage } from "next-cloudinary";
+import Navbar from "../components/Navbarmint";
 
-import images from '../public/assets';
+import images from "../public/assets";
 
-const contractAddress = "0x4C50852f241cCC9CD421D8403E4Ab120c6cE9733"
+const contractAddress = "0x4C50852f241cCC9CD421D8403E4Ab120c6cE9733";
 
 function mint() {
-
-  {/* Crossmint */}
+  {
+    /* Crossmint */
+  }
 
   const nftCost = 0.013;
   const clientId = "c90aef87-93fe-4b0f-897f-5d35ea4f2034";
@@ -40,44 +41,42 @@ function mint() {
   const handleDecrement = () => {
     if (mintAmount <= 1) return;
     setMintAmount(mintAmount - 1);
-  }
+  };
 
   const handleIncrement = () => {
     if (mintAmount >= 3) return;
     setMintAmount(mintAmount + 1);
-  }
-    
+  };
 
-    const [claiming, setClaiming] = useState(false);
-    const connectMetamask = useMetamask();
-    const { contract: contract } = useContract(contractAddress);
-    const { data: claimedNFTSupply} = useClaimedNFTSupply(contract);
-    const { data: unclaimedNFTSupply} = useUnclaimedNFTSupply(contract);
-    const isWrongNetwork = useNetworkMismatch();
-    const [, switchNetwork] = useNetwork();
+  const [claiming, setClaiming] = useState(false);
+  const connectMetamask = useMetamask();
+  const { contract: contract } = useContract(contractAddress);
+  const { data: claimedNFTSupply } = useClaimedNFTSupply(contract);
+  const { data: unclaimedNFTSupply } = useUnclaimedNFTSupply(contract);
+  const isWrongNetwork = useNetworkMismatch();
+  const [, switchNetwork] = useNetwork();
 
-    const mint = async () => {
-
-        if(!address) {
-            connectMetamask()
-            return;
-        }
-
-       if (isWrongNetwork) {
-        switchNetwork && switchNetwork(ChainId.Mainnet);
-        return;
-       }
-
-       setClaiming(true)
-
-        try {
-            await contract.erc721?.claim(quantity);
-            alert('minted successfully');
-            setClaiming(false);
-        } catch(error) {
-            alert(error)
-        }
+  const mint = async () => {
+    if (!address) {
+      connectMetamask();
+      return;
     }
+
+    if (isWrongNetwork) {
+      switchNetwork && switchNetwork(ChainId.Mainnet);
+      return;
+    }
+
+    setClaiming(true);
+
+    try {
+      await contract.erc721?.claim(quantity);
+      alert("minted successfully");
+      setClaiming(false);
+    } catch (error) {
+      alert(error);
+    }
+  };
 
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -249,75 +248,104 @@ function mint() {
   ]);
 
   const [nav, setNav] = useState(true);
-    const handleNav = () => {
-      setNav(!nav)
-    }
-    
-    return (
-            <div className='bg-[#121212] h-screen'>
-              <Head>
-      <title>DEBOOK MAGICKEY - Mint</title>
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  return (
+    <div className="bg-[#121212] h-screen">
+      <Head>
+        <title>DEBOOK MAGICKEY - Mint</title>
       </Head>
-      <meta name="description" content="The future of books. Get a MAGICKEY now and join us on creating the future of books" />
-            <Navbar />
-            <div className='flex flex-row'>
-            <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">
-                  <div className="font-bold text-center flex flex-col  justify-center items-center text-[35px] nm:text-[50px] nm:ml-6 text-white">
-                    <h1 className='text-center magickey-1 leading-[40px] nm:leading-[50px]'>DEBOOK <br /> MAGICKEY</h1>
-                    <p className=" text-center flex mt-5 text-[15px] text-white">Building the future of books together.</p>
-                  </div>
-                  <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
-                    <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">Price</p>
-                    <p className="text-[35px] nm:text-[50px] font-bold text-white">$150 USD</p>
-                    <div className="flex flex-col mt-4 mb-6 nm:mb-10 text-white">
-                      <p className="text-[10px] nm:text-[15px] text-center">Magickeys Sold</p>
-                        <h1 className='text-center text-[30px] font-bold'>{claimedNFTSupply?.toNumber()} / 3333</h1>
-                    </div>
-                    <div className={styles.quantityContainer}>
-                    <button
-                      className={`${styles.quantityControlButton}`}
-                      onClick={() => setQuantity(quantity - 1)}
-                      disabled={quantity <= 1}
-                    >
-                      -
-                    </button>
+      <meta
+        name="description"
+        content="The future of books. Get a MAGICKEY now and join us on creating the future of books"
+      />
+      <Navbar />
+      <div className="flex flex-row">
+        <div className="h-[90vh] w-[100%] nm:w-[55%] flex items-center justify-center flex-col">
+          <div className="font-bold text-center flex flex-col  justify-center items-center text-[35px] nm:text-[50px] nm:ml-6 text-white">
+            <h1 className="text-center magickey-1 leading-[40px] nm:leading-[50px]">
+              DEBOOK <br /> MAGICKEY
+            </h1>
+            <p className=" text-center flex mt-5 text-[15px] text-white">
+              Building the future of books together.
+            </p>
+          </div>
+          <div className="mint-1 mt-4 nm:mt-4 h-[40vh] nm:h-[45vh] w-[70%] nm:w-[60%] nm:min-w-[300px] rounded-3xl flex flex-col items-center justify-center">
+            <p className="text-[10px] nm:text-[15px] mt-4 nm:mt-10 text-white">
+              Price
+            </p>
+            <p className="text-[35px] nm:text-[50px] font-bold text-white">
+              $150 USD
+            </p>
+            <div className="flex flex-col mt-4 mb-6 nm:mb-10 text-white">
+              <p className="text-[10px] nm:text-[15px] text-center">
+                Magickeys Sold
+              </p>
+              <h1 className="text-center text-[30px] font-bold">
+                {claimedNFTSupply?.toNumber()} / 3333
+              </h1>
+            </div>
+            <div className={styles.quantityContainer}>
+              <button
+                className={`${styles.quantityControlButton}`}
+                onClick={() => setQuantity(quantity - 1)}
+                disabled={quantity <= 1}
+              >
+                -
+              </button>
 
-                    <h4 className='text-[30px] text-white'>{quantity}</h4>
-                  
+              <h4 className="text-[30px] text-white">{quantity}</h4>
 
-                    <button
-                      className={`${styles.quantityControlButton}`}
-                      onClick={() => setQuantity(quantity + 1)}
-                      disabled={quantity >= maxClaimable}
-                    >
-                      +
-                    </button>
-                    
-                  </div>
-                  </div>
-                  <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
-                  <CrossmintPayButton
-
-                clientId="c90aef87-93fe-4b0f-897f-5d35ea4f2034"
-                mintConfig={{ 
-                type :"thirdweb-drop",
-                totalPrice: (0.106 * quantity).toString(), 
-                quantity : (quantity) }}
+              <button
+                className={`${styles.quantityControlButton}`}
+                onClick={() => setQuantity(quantity + 1)}
+                disabled={quantity >= maxClaimable}
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div className="mt-5 w-[60%] nm:w-[40%] nm:min-w-[300px] flex flex-col space-y-4">
+            <CrossmintPayButton
+              clientId="c90aef87-93fe-4b0f-897f-5d35ea4f2034"
+              mintConfig={{
+                type: "thirdweb-drop",
+                totalPrice: (0.1 * quantity).toString(),
+                quantity: quantity,
+              }}
             />
-                    {address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 nm:py-3 font-bold rounded-lg" onClick={mint} disabled={claiming}>
-                  {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
-                </button>)}
-                {!address && (<button className=" bg-[#DBDBDB] text-black text-bold text-[14px] py-3 nm:py-5 font-bold rounded-lg"  onClick={connectMetamask}>
+            {address && (
+              <button
+                className=" bg-[#DBDBDB] text-black text-bold text-[12px] py-3 nm:py-3 font-bold rounded-lg"
+                onClick={mint}
+                disabled={claiming}
+              >
+                {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
+              </button>
+            )}
+            {!address && (
+              <button
+                className=" bg-[#DBDBDB] text-black text-bold text-[14px] py-3 nm:py-5 font-bold rounded-lg"
+                onClick={connectMetamask}
+              >
                 BUY WITH CRYPTO
-                </button>)}
-                  </div>
-                </div>
-                <div className='hidden nm:flex w-[45%]'>
-                    <CldImage alt='mint' src='v1672182763/Libro_rr2okq.png' width={1250} height={2394} />
-                </div>
-                </div>
-                </div>
-    )
-  }
-  
-  export default mint;
+              </button>
+            )}
+          </div>
+        </div>
+        <div className="hidden nm:flex w-[45%]">
+          <CldImage
+            alt="mint"
+            src="v1672182763/Libro_rr2okq.png"
+            width={1250}
+            height={2394}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default mint;
