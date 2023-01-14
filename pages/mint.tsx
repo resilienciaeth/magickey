@@ -71,7 +71,7 @@ function mint() {
 
     try {
       await contract.erc721?.claim(quantity);
-      alert("minted successfully");
+      alert("Welcome to Magickey 🧡");
       setClaiming(false);
     } catch (error) {
       alert(error);
