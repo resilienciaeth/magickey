@@ -1,22 +1,34 @@
-import React from 'react';
-import { SlSocialInstagram, SlSocialLinkedin, SlSocialTwitter } from 'react-icons/sl';
-import { CldImage } from 'next-cloudinary';
-import { BigPlayButton, Player } from 'video-react';
-import 'node_modules/video-react/dist/video-react.css';
+import React from "react";
+import {
+  SlSocialInstagram,
+  SlSocialLinkedin,
+  SlSocialTwitter,
+} from "react-icons/sl";
+import { CldImage } from "next-cloudinary";
+import { BigPlayButton, Player } from "video-react";
+import "node_modules/video-react/dist/video-react.css";
 
 function Creators() {
   return (
     <div className=" nm:h-[80vh] nm:flex nm:flex-row">
       <div className="items-left flex flex-col nm:flex-col nm:w-[40%] justify-center nm:ml-20">
         <h1 className="text-[40px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
-          Minds behind
-          {' '}
-          <br />
-          {' '}
-          the idea
+          Minds behind <br /> the idea
         </h1>
-        <p className="text-[#9F8A81] text-center nm:text-left text-[15px] nm:mr-12 hidden nm:flex">Ernest is the right brain of DEBOOK. He is the one with the vision and will be devoting his life to make sure we accomplish our mission. Daniel is the left brain and is in charge of building the platform. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
-        <p className="text-[#9F8A81] mt-4 px-6 text-center nm:text-left text-[15px] nm:mr-10 flex nm:hidden">Meet Daniel’s why, the left brain and meet Ernest why, the right brain. Both have been friends for years, they have shared many experiences and lessons in the web3 world and they are full-time dedicated to the vision.</p>
+        <p className="text-[#9F8A81] text-center nm:text-left text-[15px] nm:mr-12 hidden nm:flex">
+          Ernest is the right brain of DEBOOK. He is the one with the vision and
+          will be devoting his life to make sure we accomplish our mission.
+          Daniel is the left brain and is in charge of building the platform.
+          Both have been friends for years, they have shared many experiences
+          and lessons in the web3 world and they are full-time dedicated to the
+          vision.
+        </p>
+        <p className="text-[#9F8A81] mt-4 px-6 text-center nm:text-left text-[15px] nm:mr-10 flex nm:hidden">
+          Meet Daniel’s why, the left brain and meet Ernest why, the right
+          brain. Both have been friends for years, they have shared many
+          experiences and lessons in the web3 world and they are full-time
+          dedicated to the vision.
+        </p>
       </div>
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
         <div className="px-[4rem] nm:px-0 mt-10">
@@ -33,16 +45,36 @@ function Creators() {
             </div>
             <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
-                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Ernest Viñas</h1>
+                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">
+                  Ernest Viñas
+                </h1>
                 <h1 className="text-[#C3512D] text-left text-[12px]">
                   Founder
                 </h1>
               </div>
               <div className="magickey-6 w-full flex flex-row justify-center items-center">
                 <div className="flex flex-row space-x-4">
-                  <SlSocialInstagram className="text-white cursor-pointer" size={20} onClick={() => window.open('https://www.instagram.com/ernestdift/')} />
-                  <SlSocialTwitter className="text-white cursor-pointer" size={20} onClick={() => window.open('https://twitter.com/3rnestvinas')} />
-                  <SlSocialLinkedin onClick={() => window.open('https://www.linkedin.com/in/ernestvinas/')} className="text-white cursor-pointer" size={20} />
+                  <SlSocialInstagram
+                    className="text-white cursor-pointer"
+                    size={20}
+                    onClick={() =>
+                      window.open("https://www.instagram.com/ernestdift/")
+                    }
+                  />
+                  <SlSocialTwitter
+                    className="text-white cursor-pointer"
+                    size={20}
+                    onClick={() =>
+                      window.open("https://twitter.com/3rnestvinas")
+                    }
+                  />
+                  <SlSocialLinkedin
+                    onClick={() =>
+                      window.open("https://www.linkedin.com/in/ernestvinas/")
+                    }
+                    className="text-white cursor-pointer"
+                    size={20}
+                  />
                 </div>
               </div>
             </div>
@@ -50,21 +82,48 @@ function Creators() {
         </div>
         <div className="px-[4rem] mt-10">
           <div className="flex flex-col max-w-[327px] py-4">
-            <div>
-              <CldImage alt="Dani" src="v1672097369/dani_gstuxs.png" width={327} height={423} />
+            <div className="">
+              <video
+                className="max-h-[423px]"
+                poster="https://res.cloudinary.com/drxuutjwr/image/upload/v1672097369/dani_gstuxs.png"
+                src="/assets/IMG_6936.mov"
+                width={327}
+                controls
+                height={423}
+              />
             </div>
             <div className="mt-4 flex flex-row justify-start space-x-10">
               <div className="flex flex-col w-full justify-start items-start">
-                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">Dani Huertas</h1>
+                <h1 className="text-left font-bold magickey-2 text-[16px] nm:text-[18px]">
+                  Dani Huertas
+                </h1>
                 <h1 className="text-[#C3512D] text-left text-[12px]">
                   Co-Founder
                 </h1>
               </div>
               <div className="magickey-6 w-full flex flex-row justify-center items-center">
                 <div className="flex flex-row space-x-4">
-                  <SlSocialInstagram className="text-white cursor-pointer" size={25} onClick={() => window.open('https://www.instagram.com/danielhuertasl/')} />
-                  <SlSocialTwitter className="text-white cursor-pointer" size={25} onClick={() => window.open('https://twitter.com/resilienciaeth')} />
-                  <SlSocialLinkedin className="text-white cursor-pointer" size={20} onClick={() => window.open('https://www.linkedin.com/in/danielhuertasl/')} />
+                  <SlSocialInstagram
+                    className="text-white cursor-pointer"
+                    size={25}
+                    onClick={() =>
+                      window.open("https://www.instagram.com/danielhuertasl/")
+                    }
+                  />
+                  <SlSocialTwitter
+                    className="text-white cursor-pointer"
+                    size={25}
+                    onClick={() =>
+                      window.open("https://twitter.com/resilienciaeth")
+                    }
+                  />
+                  <SlSocialLinkedin
+                    className="text-white cursor-pointer"
+                    size={20}
+                    onClick={() =>
+                      window.open("https://www.linkedin.com/in/danielhuertasl/")
+                    }
+                  />
                 </div>
               </div>
             </div>
