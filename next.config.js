@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
+/**
+ *
+ * @type {import('next').NextConfig} */
+
+const { i18n } = require('./next-i18next.config');
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -10,28 +15,7 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  i18n,
 };
-const withFonts = require('next-fonts');
-
-module.exports = withFonts({
-  webpack(config, options) {
-    config.node = {
-      fs: 'empty',
-    };
-    config.module.rules.push({
-      test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-      use: [
-        options.defaultLoaders.babel,
-        {
-          loader: 'url-loader?limit=100000',
-        },
-        {
-          loader: 'file-loader',
-        },
-      ],
-    });
-    return config;
-  },
-});
 
 module.exports = nextConfig;

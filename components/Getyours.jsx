@@ -1,29 +1,41 @@
 import React from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import { useTranslation } from 'next-i18next';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 function Getyours() {
+  const { t } = useTranslation();
   return (
     <div className=" h-[80vh] nm:h-[60vh] flex flex-col items-center justify-center">
       <div className="flex flex-col mt-10 items-center nm:justify-center">
-        <p className="magickey-1 text-center text-[12px] nm:text-[15px]">the future of books.</p>
+        <p className="magickey-1 text-center text-[12px] nm:text-[15px]">{t('common:Getyours_1')}</p>
         <h1 className="text-center font-bold magickey-1 text-[40px] nm:text-[70px] leading-[40px] nm:leading-[70px]">
-          LET THE
+          {t('common:Getyours_2')}
           {' '}
           <br className="" />
           {' '}
-          MAGIC BEGIN
+          {t('common:Getyours_3')}
           {' '}
           <br className="" />
           {' '}
-          IN 2023
+          {t('common:Getyours_4')}
         </h1>
         <p className="text-magickey-2 mt-4 px-10 text-center text-[15px] nm:text-[15px]">
-          If you have made it all the way here, we want to say that we appreciate your time,
+          {t('common:Getyours_5')}
           {' '}
           <br className="hidden md:flex" />
           {' '}
-          and we want curious people like you to help us make DEBOOK the future of books. Join us.
+          {t('common:Getyours_6')}
         </p>
-        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">Buy your Magickey</button>
+        <button type="button" onClick={() => window.open('/mint', '_self')} onKeyDown={() => window.open('/mint', '_self')} className="magickey-6 mt-4 px-4 nm:px-6 py-2 text-[12px] nm:text-[18px] text-black font-bold">{t('common:Getyours_7')}</button>
       </div>
     </div>
   );

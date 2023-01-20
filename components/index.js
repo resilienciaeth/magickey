@@ -33,7 +33,7 @@ export default [
   Limited,
   Comparation,
   Navbarmint,
-  Carousel1,
+  Carousel,
   Card1,
   Card2,
   Card3,

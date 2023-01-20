@@ -1,5 +1,5 @@
-import React from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export function PrevButton(props) {
   const { enabled, onClick } = props;
@@ -7,7 +7,7 @@ export function PrevButton(props) {
   return (
     <FaArrowLeft
       size={30}
-      className="embla__button embla__button--prev text-white"
+      className="embla__button embla__button--prev text-white cursor-pointer"
       onClick={onClick}
       disabled={!enabled}
     />
@@ -20,7 +20,7 @@ export function NextButton(props) {
   return (
     <FaArrowRight
       size={30}
-      className="embla__button embla__button--next text-white"
+      className="embla__button embla__button--next text-white cursor-pointer"
       onClick={onClick}
       disabled={!enabled}
     />

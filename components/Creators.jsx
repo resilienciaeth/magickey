@@ -1,33 +1,42 @@
-import React from "react";
+import React from 'react';
 import {
   SlSocialInstagram,
   SlSocialLinkedin,
   SlSocialTwitter,
-} from "react-icons/sl";
-import { CldImage } from "next-cloudinary";
-import { BigPlayButton, Player } from "video-react";
-import "node_modules/video-react/dist/video-react.css";
+} from 'react-icons/sl';
+import { CldImage } from 'next-cloudinary';
+import { BigPlayButton, Player } from 'video-react';
+import 'node_modules/video-react/dist/video-react.css';
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import { useTranslation } from 'next-i18next';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 function Creators() {
+  const { t } = useTranslation();
   return (
     <div className=" nm:h-[80vh] nm:flex nm:flex-row">
       <div className="items-left flex flex-col nm:flex-col nm:w-[40%] justify-center nm:ml-20">
         <h1 className="text-[40px] nm:text-[70px] magickey-1 font-bold text-center nm:text-left leading-[40px] nm:leading-[70px]">
-          Minds behind <br /> the idea
+          {t('common:Creators_1')}
+          {' '}
+          <br />
+          {' '}
+          {t('common:Creators_2')}
         </h1>
         <p className="text-[#9F8A81] text-center nm:text-left text-[15px] nm:mr-12 hidden nm:flex">
-          Ernest is the right brain of DEBOOK. He is the one with the vision and
-          will be devoting his life to make sure we accomplish our mission.
-          Daniel is the left brain and is in charge of building the platform.
-          Both have been friends for years, they have shared many experiences
-          and lessons in the web3 world and they are full-time dedicated to the
-          vision.
+          {t('common:Creators_3')}
         </p>
         <p className="text-[#9F8A81] mt-4 px-6 text-center nm:text-left text-[15px] nm:mr-10 flex nm:hidden">
-          Meet Daniel’s why, the left brain and meet Ernest why, the right
-          brain. Both have been friends for years, they have shared many
-          experiences and lessons in the web3 world and they are full-time
-          dedicated to the vision.
+          {t('common:Creators_4')}
         </p>
       </div>
       <div className="nm:flex nm:flex-row nm:w-[60%] nm:items-center nm:justify-center">
@@ -57,21 +66,15 @@ function Creators() {
                   <SlSocialInstagram
                     className="text-white cursor-pointer"
                     size={20}
-                    onClick={() =>
-                      window.open("https://www.instagram.com/ernestdift/")
-                    }
+                    onClick={() => window.open('https://www.instagram.com/ernestdift/')}
                   />
                   <SlSocialTwitter
                     className="text-white cursor-pointer"
                     size={20}
-                    onClick={() =>
-                      window.open("https://twitter.com/3rnestvinas")
-                    }
+                    onClick={() => window.open('https://twitter.com/3rnestvinas')}
                   />
                   <SlSocialLinkedin
-                    onClick={() =>
-                      window.open("https://www.linkedin.com/in/ernestvinas/")
-                    }
+                    onClick={() => window.open('https://www.linkedin.com/in/ernestvinas/')}
                     className="text-white cursor-pointer"
                     size={20}
                   />
@@ -106,23 +109,17 @@ function Creators() {
                   <SlSocialInstagram
                     className="text-white cursor-pointer"
                     size={25}
-                    onClick={() =>
-                      window.open("https://www.instagram.com/danielhuertasl/")
-                    }
+                    onClick={() => window.open('https://www.instagram.com/danielhuertasl/')}
                   />
                   <SlSocialTwitter
                     className="text-white cursor-pointer"
                     size={25}
-                    onClick={() =>
-                      window.open("https://twitter.com/resilienciaeth")
-                    }
+                    onClick={() => window.open('https://twitter.com/resilienciaeth')}
                   />
                   <SlSocialLinkedin
                     className="text-white cursor-pointer"
                     size={20}
-                    onClick={() =>
-                      window.open("https://www.linkedin.com/in/danielhuertasl/")
-                    }
+                    onClick={() => window.open('https://www.linkedin.com/in/danielhuertasl/')}
                   />
                 </div>
               </div>

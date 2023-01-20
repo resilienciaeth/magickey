@@ -1,12 +1,23 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import images from '../public/assets';
 import imageByIndex from './CardByIndex';
 import Card1 from './Card1';
 import Card2 from './Card2';
 import Card3 from './Card3';
 import { NextButton, PrevButton } from './EmblaCarouselDotsButtons';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 function Carousel(props) {
   const { slides, options } = props;

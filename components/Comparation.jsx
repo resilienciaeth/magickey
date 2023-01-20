@@ -1,31 +1,49 @@
 import { CldImage } from 'next-cloudinary';
 import React from 'react';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import { useTranslation } from 'next-i18next';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
+
 function Comparation() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col nm:flex-row ">
       <div className="nm:w-[50%] flex flex-col justify-center px-10">
         <h1 className="text-[40px] leading-[50px] font-bold nm:text-[50px] magickey-7">
-          The differences between
+          {t('common:comparation_1')}
           {' '}
           <br />
           {' '}
-          DEBOOK and 'debook'
+          {t('common:comparation_2')}
+
         </h1>
         <div className=" mt-10">
           <p className="text-[#9F8A81] text-[15px] ">
-            <span className="font-bold text-[#9F8A81]  ">DEBOOK</span>
+            <span className="font-bold text-[#9F8A81]  ">
+              {t('common:comparation_3')}
+            </span>
             {' '}
-            is the platform, Marketplace and tokenization tool.
+            {t('common:comparation_4')}
             {' '}
-            <span className="font-bold text-[#9F8A81]">DEBOOK</span>
+            <span className="font-bold text-[#9F8A81]">
+              {t('common:comparation_5')}
+            </span>
             {' '}
-            is the term we use to refer to the brand. The future of books.
+            {t('common:comparation_6')}
           </p>
           <p className="mt-10 text-[#9F8A81] text-[15px] ">
-            <span className="font-bold">“debook”</span>
+            <span className="font-bold">{t('common:comparation_7')}</span>
             {' '}
-            is the new book’s format, a book that you can use to read, watch, interact with, own and exchange. A digital collectible that grants you access to a private community around that book. A new version of books.
+            {t('common:comparation_8')}
           </p>
         </div>
       </div>
@@ -42,19 +60,3 @@ function Comparation() {
 }
 
 export default Comparation;
-
-{ /* }
-<div className="text-[30px]">
-              <li>The brand, the new ecosystem of books</li>
-              <li>The brand, the new ecosystem of books</li>
-              <li>The brand, the new ecosystem of books</li>
-              <li>The brand, the new ecosystem of books</li>
-            </div>
-
-            <div className="text-[30px]">
-              <li>the new book’s format</li>
-              <li>a book that you can use to read, watch, interact with, own and exchange</li>
-              <li>A digital collectible that grants you access to a private community around that book.</li>
-            </div>
-
-*/ }

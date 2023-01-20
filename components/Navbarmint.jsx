@@ -45,14 +45,36 @@ function Navbar() {
         <div className="cursor-pointer z-20 flex nm:hidden" role="presentation" onKeyDown={handleNav} onClick={handleNav}>
           {!nav ? <AiOutlineClose size={20} className="text-black" /> : <AiOutlineMenu size={20} className="text-white" />}
         </div>
-        <div className={!nav ? 'fixed bg-white left-0 top-0 w-full z-10 h-full bg-beyond-1 ease-in-out duration-500' : 'fixed left-[-100%]'}>
-          <div onClick={() => window.open('/', '_self')} onKeyDown={() => window.open('/', '_self')} role="presentation" className="mt-10 px-6 cursor-pointer">
-            <CldImage alt="logo" src="v1672097966/logo_nex9ig.png" width={200} height={100} />
-          </div>
+        <div className={!nav ? 'fixed bg-[#121212] left-0 top-0 w-full z-10 h-full bg-beyond-1 ease-in-out duration-500' : 'fixed left-[-100%]'}>
           <ul className="pt-16 px-10 uppercase font-bold">
-            <li onClick={() => window.open('https://www.debook.app')} className="p-4 text-[50px]">APP</li>
-            <li onClick={() => window.open('https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5')} className="p-4 text-[50px]">MANIFESTO</li>
-            <li onClick={() => window.open('https://www.instagram.com/debook.app')} className="p-4 text-[50px]">Instagram</li>
+            <li
+              onClick={() => window.open('https://www.debook.app')}
+              className="p-4 magickey-1 text-[25px]"
+            >
+              APP
+            </li>
+            <li
+              onClick={() => window.open(
+                'https://twitter.com/search?q=%23buildingDEBOOKinpublic&src=typed_query&f=top',
+              )}
+              className="p-4 magickey-1 text-[25px]"
+            >
+              BUILDING LIVE
+            </li>
+            <li
+              onClick={() => window.open(
+                'https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5',
+              )}
+              className="p-4 magickey-1 text-[25px]"
+            >
+              MANIFESTO
+            </li>
+            <li
+              onClick={() => window.open('https://www.instagram.com/debook.app')}
+              className="p-4 magickey-1 text-[25px]"
+            >
+              Instagram
+            </li>
           </ul>
         </div>
       </div>

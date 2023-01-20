@@ -1,7 +1,19 @@
-import { CldImage } from "next-cloudinary";
-import React from "react";
+import { CldImage } from 'next-cloudinary';
+import React from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import { useTranslation } from 'next-i18next';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 function Card1() {
+  const { t } = useTranslation();
   return (
     <div className="embla__slide nm:flex  nm:flex-col nm:items-center nm:justify-center">
       <div className="bg-[#A06038] rounded-2xl  nm:w-[70%] h-[500px] nm:h-[600px] mt-10 items-center justify-center flex">
@@ -15,15 +27,15 @@ function Card1() {
             />
           </div>
           <h1 className="text-[25px] nm:text-[25px] text-white font-bold text-center">
-            Access to
+            {t('common:Card1_1')}
             <br />
-            every debook.
+            {t('common:Card1_2')}
           </h1>
           <p className="text-center mt-4 mb-10  text-white text-[15px] nm:text-[15px] px-4">
-            Yes, you read that right. Your Magickey grants you access to every
-            debook (the book's content and community) on our platform. <br />
-            To make it fair for the authors, we will require their permission
-            and will try our best to have all of them say yes.
+            {t('common:Card1_3')}
+            {' '}
+            <br />
+            {t('common:Card1_4')}
           </p>
         </div>
       </div>

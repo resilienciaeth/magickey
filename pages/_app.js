@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'next-themes';
 import Script from 'next/script';
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
+import { appWithTranslation } from 'next-i18next';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
@@ -23,4 +24,4 @@ function MyApp({ Component, pageProps }) {
     </ThirdwebProvider>
   );
 }
-export default MyApp;
+export default appWithTranslation(MyApp);

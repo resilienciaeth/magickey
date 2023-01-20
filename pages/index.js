@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '../components/Header';
 import Whatis from '../components/Whatis';
 import Utilities from '../components/Utilities';
@@ -13,6 +14,16 @@ import Limited from '../components/Limited';
 import Comparation from '../components/Comparation';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+import '../next-i18next.config';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 const index = () => (
   <div>
