@@ -22,11 +22,9 @@ function Header() {
           <br className="flex nm:hidden" />
           {' '}
           {t('common:title_2')}
-
+          {' '}
           <br className="hidden nm:flex" />
-
           {t('common:title_3')}
-
           <br className="flex nm:hidden" />
           {' '}
           {t('common:title_4')}
