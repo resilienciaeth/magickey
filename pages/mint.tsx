@@ -71,7 +71,7 @@ function mint() {
 
     try {
       await contract.erc721?.claim(quantity);
-      alert("Welcome to Magickey 🧡");
+      alert("Welcome to the dream 🧡 Now you are part of the future of books!");
       setClaiming(false);
     } catch (error) {
       alert(error);
@@ -322,7 +322,7 @@ function mint() {
                 onClick={mint}
                 disabled={claiming}
               >
-                {claiming ? "CLAIMING COLLECTIBLE" : "BUY MAGICKEY"}
+                {claiming ? "CLAIMING MAGICKEY" : "BUY MAGICKEY"}
               </button>
             )}
             {!address && (
