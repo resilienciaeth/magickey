@@ -6,7 +6,7 @@ import {
   AiOutlineBell,
 } from 'react-icons/ai';
 import { BsJournalBookmark } from 'react-icons/bs';
-import { SlSocialInstagram } from 'react-icons/sl';
+import { MdOutlinePodcasts } from 'react-icons/md';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { useTranslation } from 'next-i18next';
@@ -48,7 +48,7 @@ function Navbar() {
             className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]"
           >
             <AiOutlineAppstoreAdd size={30} />
-            <li className="p-2 ">App</li>
+            <li className="p-2 ">Marketplace</li>
           </div>
           <div
             onClick={() => window.open(
@@ -72,34 +72,14 @@ function Navbar() {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-debook-1" />
             </span>
           </div>
-          <div className="flex flex-row items-center px-2 cursor-pointer rounded-2xl bg-hover:bg-zinc-900 duration-[600ms]">
-            <SlSocialInstagram size={25} />
-            <li className="peer p-2 cursor-pointer">{t('common:Navbar_3')}</li>
-            <div
-              className="hidden peer-hover:flex top-[3.8rem] absolute hover:flex rounded-2xl
-         w-[100px] flex-col drop-shadow-lg"
-            >
-              <a
-                className="px-5 text-right py-3 text-white hover:bg-zinc-800"
-                onClick={() => window.open('https://twitter.com/Debook_app')}
-              >
-                Twitter
-              </a>
-              <a
-                className="px-5 py-3 text-right  text-white hover:bg-zinc-800"
-                href="#"
-                onClick={() => window.open('https://www.instagram.com/debook.app')}
-              >
-                Instagram
-              </a>
-              <a
-                className="px-5 py-3 text-right  text-white hover:bg-zinc-800"
-                href="#"
-                onClick={() => window.open('https://www.linkedin.com/company/debook?trk=public_profile_experience-item_profile-section-card_image-click')}
-              >
-                Linkedin
-              </a>
-            </div>
+          <div
+            onClick={() => window.open(
+              'https://www.youtube.com/@debook1066',
+            )}
+            className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]"
+          >
+            <MdOutlinePodcasts size={30} />
+            <li className="p-2 cursor-pointer">Podcast</li>
           </div>
           <button
             type="button"
@@ -134,16 +114,22 @@ function Navbar() {
               onClick={() => window.open('https://www.debook.app')}
               className="p-4 magickey-1 text-[25px]"
             >
-              APP
+              MARKETPLACE
             </li>
-            <li
-              onClick={() => window.open(
-                'https://twitter.com/search?q=%23buildingDEBOOKinpublic&src=typed_query&f=top',
-              )}
-              className="p-4 magickey-1 text-[25px]"
-            >
-              BUILDING LIVE
-            </li>
+            <div className="flex flex-row items-center">
+              <li
+                onClick={() => window.open(
+                  'https://twitter.com/search?q=%23buildingDEBOOKinpublic&src=typed_query&f=top',
+                )}
+                className="p-4 magickey-1 text-[25px]"
+              >
+                BUILDING LIVE
+              </li>
+              <span className="flex h-3 w-3 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-debook-1 opacity-75" />
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-debook-1" />
+              </span>
+            </div>
             <li
               onClick={() => window.open(
                 'https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5',
@@ -153,10 +139,10 @@ function Navbar() {
               MANIFESTO
             </li>
             <li
-              onClick={() => window.open('https://www.instagram.com/debook.app')}
+              onClick={() => window.open('https://www.youtube.com/@debook1066')}
               className="p-4 magickey-1 text-[25px]"
             >
-              Instagram
+              PODCAST
             </li>
             <button
               onClick={() => window.open('/mint', '_self')}
