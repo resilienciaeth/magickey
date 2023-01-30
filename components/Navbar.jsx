@@ -12,6 +12,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 import { CldImage } from 'next-cloudinary';
+import { useRouter } from 'next/router';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -26,6 +27,11 @@ function Navbar() {
   const [nav, setNav] = useState(true);
   const handleNav = () => {
     setNav(!nav);
+  };
+  const { locale, locales, push } = useRouter();
+
+  const handleClick = (l) => () => {
+    push('/', undefined, { locale: l });
   };
   return (
     <nav>
@@ -42,7 +48,17 @@ function Navbar() {
             height={20}
           />
         </div>
-        <ul className="hidden text-white font-bold nm:flex nm:mr-10 space-x-[4rem] text-[15px]">
+        <div className="flex nm:hidden flex-row space-x-2">
+          {locales.map((l) => (
+            <button type="button" className="space-x-2 relative inline-flex items-center px-2 py-1 text-sm leading-5 rounded-md text-black uppercase font-bold  bg-magickey-2 hover:text-gray-500 focus:outline-none focus:shadow-outline-blue  active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" key={l} onClick={handleClick(l)}>{l}</button>
+          ))}
+        </div>
+        <ul className="hidden text-white font-bold nm:flex nm:mr-10 space-x-[2rem] text-[15px]">
+          <div className="flex flex-row space-x-2">
+            {locales.map((l) => (
+              <button type="button" className="space-x-2 relative inline-flex items-center px-3 py-2 text-sm leading-5 rounded-md text-black uppercase font-bold  bg-magickey-2 hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" key={l} onClick={handleClick(l)}>{l}</button>
+            ))}
+          </div>
           <div
             onClick={() => window.open('https://www.debook.app')}
             className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]"
