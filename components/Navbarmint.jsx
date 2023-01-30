@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineAppstoreAdd } from 'react-icons/ai';
 import { BsJournalBookmark } from 'react-icons/bs';
-import { SlSocialInstagram, SlSocialTwitter } from 'react-icons/sl';
+import { MdOutlinePodcasts } from 'react-icons/md';
 
 import { CldImage } from 'next-cloudinary';
 
@@ -25,21 +25,20 @@ function Navbar() {
         <ul className="hidden text-white font-bold nm:flex nm:mr-10 space-x-[4rem] text-[15px]">
           <div onClick={() => window.open('https://www.debook.app')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
             <AiOutlineAppstoreAdd size={30} />
-            <li className="p-2 ">App</li>
+            <li className="p-2 ">Marketplace</li>
           </div>
           <div onClick={() => window.open('https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5')} className="flex flex-row items-center px-2 cursor-pointer rounded-2xl hover:bg-zinc-900 duration-[600ms]">
             <BsJournalBookmark size={25} />
             <li className="p-2 cursor-pointer">Manifesto</li>
           </div>
-          <div className="flex flex-row items-center px-2 cursor-pointer rounded-2xl bg-hover:bg-zinc-900 duration-[600ms]">
-            <SlSocialInstagram size={25} />
-            <li className="peer p-2 cursor-pointer">Socials</li>
-            <div className="hidden peer-hover:flex top-[3.8rem] absolute hover:flex rounded-2xl
-         w-[100px] flex-col drop-shadow-lg"
-            >
-              <a className="px-5 text-right py-3 text-white hover:bg-zinc-800" onClick={() => window.open('https://twitter.com/Debook_app')}>Twitter</a>
-              <a className="px-5 py-3 text-right  text-white hover:bg-zinc-800" href="#" onClick={() => window.open('https://www.instagram.com/debook.app')}>Instagram</a>
-            </div>
+          <div
+            onClick={() => window.open(
+              'https://www.youtube.com/@debook1066',
+            )}
+            className="flex flex-row items-center px-2 cursor-pointer rounded-2xl bg-hover:bg-zinc-900 duration-[600ms]"
+          >
+            <MdOutlinePodcasts size={25} />
+            <li className="peer p-2 cursor-pointer">Podcast</li>
           </div>
         </ul>
         <div className="cursor-pointer z-20 flex nm:hidden" role="presentation" onKeyDown={handleNav} onClick={handleNav}>
@@ -53,14 +52,20 @@ function Navbar() {
             >
               APP
             </li>
-            <li
-              onClick={() => window.open(
-                'https://twitter.com/search?q=%23buildingDEBOOKinpublic&src=typed_query&f=top',
-              )}
-              className="p-4 magickey-1 text-[25px]"
-            >
-              BUILDING LIVE
-            </li>
+            <div className="flex flex-row items-center">
+              <li
+                onClick={() => window.open(
+                  'https://twitter.com/search?q=%23buildingDEBOOKinpublic&src=typed_query&f=top',
+                )}
+                className="p-4 magickey-1 text-[25px]"
+              >
+                BUILDING LIVE
+              </li>
+              <span className="flex h-3 w-3 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-debook-1 opacity-75" />
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-debook-1" />
+              </span>
+            </div>
             <li
               onClick={() => window.open(
                 'https://feather-citrine-09c.notion.site/DEBOOK-MANIFESTO-9425060483794743ba6a10b048970bf5',
