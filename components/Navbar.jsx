@@ -56,7 +56,7 @@ function Navbar() {
         <ul className="hidden text-white font-bold nm:flex nm:mr-10 space-x-[2rem] text-[15px]">
           <div className="flex flex-row space-x-2">
             {locales.map((l) => (
-              <button type="button" className="space-x-2 relative inline-flex items-center px-3 py-2 text-sm leading-5 rounded-md text-black uppercase font-bold  bg-magickey-2 hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150" key={l} onClick={handleClick(l)}>{l}</button>
+              <button type="button" className="space-x-2 relative inline-flex items-center px-3 py-2 text-sm leading-5 rounded-md text-black uppercase font-bold  bg-magickey-2 hover:text-white focus:outline-none focus:shadow-outline-blue active:bg-gray-100 active:text-white transition ease-in-out duration-150" key={l} onClick={handleClick(l)}>{l}</button>
             ))}
           </div>
           <div
