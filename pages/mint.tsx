@@ -29,7 +29,6 @@ import images from "../public/assets";
 const contractAddress = "0x4C50852f241cCC9CD421D8403E4Ab120c6cE9733";
 
 function mint() {
-
   const nftCost = 0.013;
   const clientId = "c90aef87-93fe-4b0f-897f-5d35ea4f2034";
 
@@ -309,7 +308,7 @@ function mint() {
               clientId="c90aef87-93fe-4b0f-897f-5d35ea4f2034"
               mintConfig={{
                 type: "thirdweb-drop",
-                totalPrice: (0.1 * quantity).toString(),
+                totalPrice: (0.091 * quantity).toString(),
                 quantity: quantity,
               }}
             />
