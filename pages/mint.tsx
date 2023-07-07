@@ -67,7 +67,7 @@ function mint() {
 
     try {
       await contract.erc721?.claim(quantity);
-      alert("Welcome to the dream 🧡 Now you are part of the future of books!");
+      alert("Welcome to the dream 🧡 You are now part of the future of books!");
       setClaiming(false);
     } catch (error) {
       alert(error);
